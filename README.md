@@ -8,7 +8,7 @@
 
 - **Telegram:** [@NastiMel]
 - **Email:** [euro16012002@gmail.com]
-- **GitHub:** [github.com/Nastasvushka16](https://github.com/Nastasvushka16)
+- **GitHub:** [github.com/Nastasvushka16](https://github.com/Nastasyushka16)
 
 ---
 
