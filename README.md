@@ -6,7 +6,7 @@
 
 ## Контакты
 
-- **Telegram:** [@NastiMel]
+- **Telegram:** [@Nasti_Mel]
 - **Email:** [euro16012002@gmail.com]
 - **GitHub:** [github.com/Nastasvushka16](https://github.com/Nastasyushka16)
 
