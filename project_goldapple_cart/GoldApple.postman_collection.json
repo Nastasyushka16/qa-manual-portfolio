@@ -1,0 +1,910 @@
+{
+  "info": {
+    "_postman_id": "9685729a-02f5-4953-ba64-9981a55cf080",
+    "name": "GoldApple",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "51922530"
+  },
+  "item": [
+    {
+      "name": "Cart",
+      "item": [
+        {
+          "name": "Add to cart",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "accept",
+                "value": "application/json, text/plain, */*"
+              },
+              {
+                "key": "accept-language",
+                "value": "ru,en;q=0.9"
+              },
+              {
+                "key": "cache-control",
+                "value": "no-cache"
+              },
+              {
+                "key": "content-type",
+                "value": "application/json"
+              },
+              {
+                "key": "origin",
+                "value": "https://goldapple.ru"
+              },
+              {
+                "key": "plaid-city-id",
+                "value": "{{cityId}}"
+              },
+              {
+                "key": "plaid-device-id",
+                "value": "{{deviceId}}"
+              },
+              {
+                "key": "plaid-geo-polygons",
+                "value": "{{geo}}"
+              },
+              {
+                "key": "plaid-language-id",
+                "value": "ru_RU"
+              },
+              {
+                "key": "plaid-platform",
+                "value": "web"
+              },
+              {
+                "key": "plaid-region-id",
+                "value": "{{regionId}}"
+              },
+              {
+                "key": "plaid-store-id",
+                "value": "ru"
+              },
+              {
+                "key": "plaid-version",
+                "value": "1.0.0"
+              },
+              {
+                "key": "pragma",
+                "value": "no-cache"
+              },
+              {
+                "key": "priority",
+                "value": "u=1, i"
+              },
+              {
+                "key": "referer",
+                "value": "https://goldapple.ru/89190600001-cicalfate"
+              },
+              {
+                "key": "sec-ch-ua",
+                "value": "\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"YaBrowser\";v=\"26.4\", \"Yowser\";v=\"2.5\""
+              },
+              {
+                "key": "sec-ch-ua-mobile",
+                "value": "?0"
+              },
+              {
+                "key": "sec-ch-ua-platform",
+                "value": "\"Windows\""
+              },
+              {
+                "key": "sec-fetch-dest",
+                "value": "empty"
+              },
+              {
+                "key": "sec-fetch-mode",
+                "value": "cors"
+              },
+              {
+                "key": "sec-fetch-site",
+                "value": "same-origin"
+              },
+              {
+                "key": "traceparent",
+                "value": "00-d2ca3089e4f8beeec4306593238e8215-4a87a6328a0a27bb-01"
+              },
+              {
+                "key": "user-agent",
+                "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 YaBrowser/26.4.0.0 Safari/537.36"
+              },
+              {
+                "key": "x-gib-fgsscw-goldapple",
+                "value": "ksrV476166950a247b0029610871eae73402d520"
+              },
+              {
+                "key": "x-gib-gsscw-goldapple",
+                "value": "KABHdW6zfLBpunFZuftUSWJO98h1RXCMzb+KQAIrvGkmKqjGLDS5do5TvNjPWgCk01VZMFraJCT4Py3jwlG9YMF7dgaZjJjp6CwXvXOLYjn2+7Xw5ORa1hbtIBl7OQO1eNznLWwqWIRo/GcaAk/5hIrJPo46IVBi9mtw8cTFVWu+lt9dELHZMBFKOIzUHiocGgGqEK+4xNKxnle7mM3VEChFseOLIOFgW+5ZXLLi+TIGEmHo3Eq84hignjAwITY3NlcwGvYqaelI4isCmR6rTiDfTnJoIdx6i/qLP8Ri"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"sku\": \"89190600001\",\r\n    \"analyticsDetails\": {\r\n        \"itemId\": \"89190600001\",\r\n        \"itemListName\": \"брендзона/eau-thermale-avene/block: бестселлеры\",\r\n        \"itemListId\": \"брендзона/block_4/eau-thermale-avene\",\r\n        \"categoryId\": \"1000001163\",\r\n        \"searchTerm\": \"avene\",\r\n        \"index\": 3,\r\n        \"modalViewId\": null\r\n    },\r\n    \"cartBeautiesStore\": true,\r\n    \"includeDeliveryThreshold\": false,\r\n    \"fiasId\": \"{{fiasId}}\",\r\n    \"cityDistrict\": null,\r\n    \"geoPolygons\": \"{{geo}}\",\r\n    \"regionId\": \"{{regionId}}\",\r\n    \"isPlaid\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://goldapple.ru/front/api/cart/item?locale=ru",
+              "protocol": "https",
+              "host": [
+                "goldapple",
+                "ru"
+              ],
+              "path": [
+                "front",
+                "api",
+                "cart",
+                "item"
+              ],
+              "query": [
+                {
+                  "key": "locale",
+                  "value": "ru"
+                }
+              ]
+            },
+            "description": "Generated from cURL: curl 'https://goldapple.ru/front/api/cart/item?locale=ru' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: ru,en;q=0.9' \\\r\n  -H 'cache-control: no-cache' \\\r\n  -H 'content-type: application/json' \\\r\n  -b '_ym_uid=1779522575660610355; _ym_d=1779522575; ga-device-id=Ky71MZXKQdbCYDsESWLAy; advcake_track_id=f02ef9b2-ab67-830b-5373-cd489a54798f; advcake_session_id=347e5672-840b-ad1d-8c06-8a6ede599378; mindboxDeviceUUID=56a46a2f-5443-4d46-b185-6090a418bfbf; directCrm-session=%7B%22deviceGuid%22%3A%2256a46a2f-5443-4d46-b185-6090a418bfbf%22%7D; _gcl_au=1.1.1665288543.1779522590; _ga=GA1.1.1910355215.1779522591; tmr_lvid=1ce75d6fd3a1287209e10ce966ab478b; tmr_lvidTS=1779522590819; adrcid=Ax74XyeyAvHk6jzm0cwyokw; ga_ecom_access_token=eyJhbGciOiJSUzI1NiIsImtpZCI6IkE4QTdDRDBFNjE0REQxNzE1OTU0ODZCNjA5MjNDMTBCRDYyMDZGMTRSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6InFLZk5EbUZOMFhGWlZJYTJDU1BCQzlZZ2J4USJ9.eyJuYmYiOjE3Nzk1MzkyNTAsImV4cCI6MTc5NTMwNzI1MCwiaXNzIjoiaHR0cHM6Ly9wbGFpZC5nb2xkYXBwbGUucnUiLCJhdWQiOiJJbnRlcm5hbEFQSSIsImNsaWVudF9pZCI6ImNsaWVudF93ZWIiLCJzdWIiOiI3OTE4NDgzODEwOCIsImF1dGhfdGltZSI6MTc3OTUzOTI1MCwiaWRwIjoicGhvbmVfcHVzaF90b2tlbiIsImN2ZCI6IjMxMjk3MTkiLCJjdnYiOiIxIiwibWFnZW50b19pZCI6IjAiLCJkaWQiOiJkYzY4NjlmNmU0YjI2MzMzIiwiZ2liIjoiYjM1MDFmYjNkOTZlNWZhYiIsImN1c3RvbWVyX2lkIjoiNDM5NWMwNTgtMTM5Yi00ZTQzLWFjMTgtYWZlZmMzZDIzZTdiIiwiY3VzdG9tZXJfcGhvbmUiOiI3OTE4NDgzODEwOCIsImN1c3RvbWVyX2lzX3JlZ2lzdGVyZWQiOiIxIiwiY3VzdG9tZXJfZ3JvdXBfaWQiOiI3IiwiY3BkIjoiMCIsImp0aSI6IjM0NkNDN0RGQUFGNTVCNDBCQTMyQzc4MDQ1QzQwNDdGIiwiaWF0IjoxNzc5NTM5MjUwLCJzY29wZSI6WyJvcGVuaWQiLCJwcm9maWxlIiwiV2ViQVBJIiwib2ZmbGluZV9hY2Nlc3MiXX0.ztOxe2nEG_F0BukCW9GVk_U4zwG0TEJ4t4ty7tl1Sa7059vsNbD4Orr4jIR-1yfANXk5DLjjVIDM-a2pE_vp1TnfE9QBq3p0dyLRabQjkINjEl6bueUeA8qw2I8AS41SejKJ4k651MaAYXY65k7SvmRfuiZ-AMs6RkJz71auVSVfW-cwm4CeA0RW5oxP3gNPflHENI7A-P2Q9JDztWgqUCCAaNf8Qy3ZVKnqlndss5HG_7RLLlMArVJ3YAz7Atu3m68ez6lGRF5UlTnWQpn_pkVkt0z9Pp-e6Xy7VPwZLqWEz4yIQMdhOx7JlM0r-hQcxxgKGtQkPHEc8hd4ZTUdI9RBMX4guQQjDmg72ab6IvJMPKEde1_vI1Clyu4yqV6RCt9YB0zMfsD-4O7QgLNQGwiEalVnZyW71gwk0URGA647uDhGNIy-jML6NtjLMki4X-a2mmraFiEM1UdY63vTWIFlj9epWdhGToMmOiRwFf2QjXZYS3XDZ1KDa9Q7AvOFMvi5_aFbdxSeiR6gef59-Ip9pfddGNtWxpiU5uFa2ioExPHIblybZ77eYJXcr6DA4Hhgkn80N16SREoawlM43-pl3NcmlVyeYYQ58WTQWxPDrBpOJE33Kh5zplRVxB7kzSSVj7a9oqmK9X1UM2IiADPjkd_N-HLdFEkp4CMDVLY; ga_ecom_has_access_token=true; ga_ecom_refresh_token=1434A75B369DC645865C8BE7D2E27499E80F5C0D97AE2E6393E950DF59399C18; ga_ecom_has_refresh_token=true; ga-ecom-user-id=4395c058-139b-4e43-ac18-afefc3d23e7b; ga-session-assets=1779540019.206.690923.387047|35ea8fadbee41dc5f5431a69d8c9f4c4; ga-lang=ru; client-store-code=default; mage-cache-sessid=true; adrdel=1779625374725; domain_sid=J6Z5t-UCPzfji0r2x3VFq%3A1779625376940; advcake_track_url=%3D20250113wu5JnGbuEtaUi29CS%2FG6wy6AuU7sVqP2Z3VepeQkYr2Ipfnt%2BkfF3cjAOds7%2B7nIF7e%2FJpDKL3oh8a2JiX%2Bwo0%2BoJbRnaVIZmtzxnT7FohHL8Ck5zGRSmBRjShJZP1dw13MTFfpUraiQjI4sj6GEbLY%2F8oXG2Ur6mdPWc%2BHmAwEGogU88zo%2Bw4HQ9KxY%2BjFcu1PptuUFXxCxaUURBHNr1ldERolgBAWEEIlBXOSS71IiqCQk%2BrF0Gjwt7bgykixB1PviICo4P2m9xUwH51e4DkbKmO14iMEw1bNkGf6AKD%2BvCwVruS59esSISOhw4CNdFiJLzj%2FuUVT%2FdGPpgoPs3WDin9%2F1kyzFH%2F8ooThGCjkKe20kWsqBSHBrYw92KEYY8vCZ1sYd9SRywvS1gGTK5kylJceBvI070xRazzrMnlD5YS%2BIttUynHvUY2yvtIZ%2F5ar6T6Kx05%2BgCPZXsG1GVbSS8RrVNzBTBpxaPUp2rMDXUYWyqpgqwfDVMMQ14gYXMRSQNQON2NTGEn0gKjXnxKejJQ8TbSmcH5bgT%2F%2BnQX73I7yrRVUXu%2BLuoxg2zDGgLslqTeXC8QqIYmy6Uh32cH8XNQyabNFikttAiBnZrJhiEaJEpFyby%2B4%2Bb%2FxjAaUMTLL%2BFQcVuf64VGMRA%2FWO8KBGvw2rZ2Ka3qK1aPk6kuHmUkNDTLwSYVA%3D; __zzatw-goldapple=MDA0dC0cTHtmcDhhDHEWTT17CT4VHThHKHIzd2UtPm4iGkdeJ0BWUApXFhU0byZMOD5cRT4mMV5xICAbSVxUSg8/dRdZRkE2XBpLdWUvDDk6a2wkUlFDS2N8GgprLxoYfnQpUQ8MY0RIcHglLTFmJ3xLKTUdETJeV1U0O2dBVFg=/f+yew==; tmr_detect=0%7C1779628193219; ngx_s_id=NjQ5NzQyNjUtM2VhYi00OGM2LWFlMDEtZjAxOTMyMjA5ZTQzQDE3Nzk3MDk2NDc0MjdANDUwMDAwMEAxNzc5NTY0NDUxMjE3QDA0MjljYzBkNTdmNTg1ZDI1ZGRhNmE4NTRlZmZjNDMyMzkyMTgwNmFkYzMwMThhMzdhM2Q1YmE0OGViNGI4ZmI=; acs_3=%7B%22hash%22%3A%221aa3f9523ee6c2690cb34fc702d4143056487c0d%22%2C%22nst%22%3A1779796049644%2C%22sl%22%3A%7B%22224%22%3A1779709649644%2C%221228%22%3A1779709649644%7D%7D; _sp_ses.925f=*; digi-analytics-sessionId=PTpxMCt731EJettf9C2Hn; _ga_QE5MQ8XJJK=GS2.1.s1779709654$o8$g1$t1779710069$j20$l0$h0; _sp_id.925f=c620e419-41b8-41da-8449-acbefb8b4495.1779522588.7.1779710070.1779628236.5a4cd4fb-157b-4a50-8024-6589cf36a356.1ebffec4-4a4e-427b-8177-54f0f9904cc7.9e1e77e6-b204-4b58-a664-b77e185e85e6.1779709654733.35; gsscw-goldapple=KABHdW6zfLBpunFZuftUSWJO98h1RXCMzb+KQAIrvGkmKqjGLDS5do5TvNjPWgCk01VZMFraJCT4Py3jwlG9YMF7dgaZjJjp6CwXvXOLYjn2+7Xw5ORa1hbtIBl7OQO1eNznLWwqWIRo/GcaAk/5hIrJPo46IVBi9mtw8cTFVWu+lt9dELHZMBFKOIzUHiocGgGqEK+4xNKxnle7mM3VEChFseOLIOFgW+5ZXLLi+TIGEmHo3Eq84hignjAwITY3NlcwGvYqaelI4isCmR6rTiDfTnJoIdx6i/qLP8Ri; cfidsw-goldapple=39F7wQCwRWLnlcVWtIop5oXydbnduuc8XB7TgZ1CBLgRfEnU3/EU5taoiQyjgtphMaiYxR14ZiS7S8QzPqlGTq0ujZfyw+hhIWKiX7aXYYZHPRd+pzz+HPLbq9y0yOVN6pzizsEjsT8vhmgf+OPg/2hduGIPntkYEY1nKsI=; cfidsw-goldapple=39F7wQCwRWLnlcVWtIop5oXydbnduuc8XB7TgZ1CBLgRfEnU3/EU5taoiQyjgtphMaiYxR14ZiS7S8QzPqlGTq0ujZfyw+hhIWKiX7aXYYZHPRd+pzz+HPLbq9y0yOVN6pzizsEjsT8vhmgf+OPg/2hduGIPntkYEY1nKsI=; gsscw-goldapple=KABHdW6zfLBpunFZuftUSWJO98h1RXCMzb+KQAIrvGkmKqjGLDS5do5TvNjPWgCk01VZMFraJCT4Py3jwlG9YMF7dgaZjJjp6CwXvXOLYjn2+7Xw5ORa1hbtIBl7OQO1eNznLWwqWIRo/GcaAk/5hIrJPo46IVBi9mtw8cTFVWu+lt9dELHZMBFKOIzUHiocGgGqEK+4xNKxnle7mM3VEChFseOLIOFgW+5ZXLLi+TIGEmHo3Eq84hignjAwITY3NlcwGvYqaelI4isCmR6rTiDfTnJoIdx6i/qLP8Ri; fgsscw-goldapple=ksrV476166950a247b0029610871eae73402d520' \\\r\n  -H 'origin: https://goldapple.ru' \\\r\n  -H 'plaid-city-id: 7dfa745e-aa19-4688-b121-b655c11e482f' \\\r\n  -H 'plaid-device-id: Ky71MZXKQdbCYDsESWLAy' \\\r\n  -H 'plaid-geo-polygons: EKB-000000389,EKB-000000387,EKB-000001386,EKB-000001440,EKB-000001484,EKB-000001564,EKB-000001678,EKB-000000388' \\\r\n  -H 'plaid-language-id: ru_RU' \\\r\n  -H 'plaid-platform: web' \\\r\n  -H 'plaid-region-id: d00e1013-16bd-4c09-b3d5-3cb09fc54bd8' \\\r\n  -H 'plaid-store-id: ru' \\\r\n  -H 'plaid-version: 1.0.0' \\\r\n  -H 'pragma: no-cache' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://goldapple.ru/89190600001-cicalfate' \\\r\n  -H 'sec-ch-ua: \"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"YaBrowser\";v=\"26.4\", \"Yowser\";v=\"2.5\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'traceparent: 00-d2ca3089e4f8beeec4306593238e8215-4a87a6328a0a27bb-01' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 YaBrowser/26.4.0.0 Safari/537.36' \\\r\n  -H 'x-gib-fgsscw-goldapple: ksrV476166950a247b0029610871eae73402d520' \\\r\n  -H 'x-gib-gsscw-goldapple: KABHdW6zfLBpunFZuftUSWJO98h1RXCMzb+KQAIrvGkmKqjGLDS5do5TvNjPWgCk01VZMFraJCT4Py3jwlG9YMF7dgaZjJjp6CwXvXOLYjn2+7Xw5ORa1hbtIBl7OQO1eNznLWwqWIRo/GcaAk/5hIrJPo46IVBi9mtw8cTFVWu+lt9dELHZMBFKOIzUHiocGgGqEK+4xNKxnle7mM3VEChFseOLIOFgW+5ZXLLi+TIGEmHo3Eq84hignjAwITY3NlcwGvYqaelI4isCmR6rTiDfTnJoIdx6i/qLP8Ri' \\\r\n  --data-raw '{\"sku\":\"89190600001\",\"analyticsDetails\":{\"itemId\":\"89190600001\",\"itemListName\":\"брендзона/eau-thermale-avene/block: бестселлеры\",\"itemListId\":\"брендзона/block_4/eau-thermale-avene\",\"categoryId\":\"1000001163\",\"searchTerm\":\"avene\",\"index\":3,\"modalViewId\":null},\"cartBeautiesStore\":true,\"includeDeliveryThreshold\":false,\"fiasId\":\"7dfa745e-aa19-4688-b121-b655c11e482f\",\"cityDistrict\":null,\"geoPolygons\":[\"EKB-000000389\",\"EKB-000000387\",\"EKB-000001386\",\"EKB-000001440\",\"EKB-000001484\",\"EKB-000001564\",\"EKB-000001678\",\"EKB-000000388\"],\"regionId\":\"d00e1013-16bd-4c09-b3d5-3cb09fc54bd8\",\"isPlaid\":true}'"
+          },
+          "response": []
+        },
+        {
+          "name": "Get cart",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "accept",
+                "value": "application/json, text/plain, */*"
+              },
+              {
+                "key": "accept-language",
+                "value": "ru,en;q=0.9"
+              },
+              {
+                "key": "cache-control",
+                "value": "no-cache"
+              },
+              {
+                "key": "plaid-city-id",
+                "value": "{{cityId}}"
+              },
+              {
+                "key": "plaid-device-id",
+                "value": "{{deviceId}}"
+              },
+              {
+                "key": "plaid-geo-polygons",
+                "value": "{{geo}}"
+              },
+              {
+                "key": "plaid-language-id",
+                "value": "ru_RU"
+              },
+              {
+                "key": "plaid-platform",
+                "value": "web"
+              },
+              {
+                "key": "plaid-region-id",
+                "value": "{{regionId}}"
+              },
+              {
+                "key": "plaid-store-id",
+                "value": "ru"
+              },
+              {
+                "key": "plaid-version",
+                "value": "1.0.0"
+              },
+              {
+                "key": "pragma",
+                "value": "no-cache"
+              },
+              {
+                "key": "priority",
+                "value": "u=1, i"
+              },
+              {
+                "key": "referer",
+                "value": "https://goldapple.ru/89190600001-cicalfate"
+              },
+              {
+                "key": "sec-ch-ua",
+                "value": "\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"YaBrowser\";v=\"26.4\", \"Yowser\";v=\"2.5\""
+              },
+              {
+                "key": "sec-ch-ua-mobile",
+                "value": "?0"
+              },
+              {
+                "key": "sec-ch-ua-platform",
+                "value": "\"Windows\""
+              },
+              {
+                "key": "sec-fetch-dest",
+                "value": "empty"
+              },
+              {
+                "key": "sec-fetch-mode",
+                "value": "cors"
+              },
+              {
+                "key": "sec-fetch-site",
+                "value": "same-origin"
+              },
+              {
+                "key": "traceparent",
+                "value": "00-8fc36ce0630a0e5f3c4b76e9b0e39306-1c4968c027bd3af7-00"
+              },
+              {
+                "key": "user-agent",
+                "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 YaBrowser/26.4.0.0 Safari/537.36"
+              },
+              {
+                "key": "x-gib-fgsscw-goldapple",
+                "value": "IrQM94e9b83f0360ef1abb5206e341b76ca30620"
+              },
+              {
+                "key": "x-gib-gsscw-goldapple",
+                "value": "bgUZ8MPNUt2pt+bCLa9QMV1GKZt5GjItPRU+CXraa6zuhO4K3OUl26D1yz3mKy8r+0Y1OjhYHcsYT2sMylQ4C9+24da1dmmGkuSY5VWKPi0Eax27UhcI1D7+/PWMdae5tvR4g9WQ74fzHi3msJJ4xwI7SrQnUcjg4GW20y1n7xx3DR1BrztgUvdibI/wVd5igyAp3ZZ0QZItjnaZJsYOQc7Zy1N5e4wZLmadsMzz+sKvGVoD7WKklgATQEChnN2zrDfe67BhEXxaSWcVvgjwalW0HLZIjnODidiWSFCSAIkMjyacF69lMQ=="
+              }
+            ],
+            "url": {
+              "raw": "https://goldapple.ru/front/api/cart?locale=ru&forceCreate=false&fiasId={{fiasId}}&geoPolygons\\[\\]={{geo}}&isPlaid=true&cartBeautiesStore=true&includeDeliveryThreshold=true",
+              "protocol": "https",
+              "host": [
+                "goldapple",
+                "ru"
+              ],
+              "path": [
+                "front",
+                "api",
+                "cart"
+              ],
+              "query": [
+                {
+                  "key": "locale",
+                  "value": "ru"
+                },
+                {
+                  "key": "forceCreate",
+                  "value": "false"
+                },
+                {
+                  "key": "fiasId",
+                  "value": "{{fiasId}}"
+                },
+                {
+                  "key": "geoPolygons\\[\\]",
+                  "value": "{{geo}}"
+                },
+                {
+                  "key": "isPlaid",
+                  "value": "true"
+                },
+                {
+                  "key": "cartBeautiesStore",
+                  "value": "true"
+                },
+                {
+                  "key": "includeDeliveryThreshold",
+                  "value": "true"
+                }
+              ]
+            },
+            "description": "Generated from cURL: curl 'https://goldapple.ru/front/api/cart?locale=ru&forceCreate=false&fiasId=7dfa745e-aa19-4688-b121-b655c11e482f&geoPolygons\\[\\]=EKB-000000389&geoPolygons\\[\\]=EKB-000000387&geoPolygons\\[\\]=EKB-000001386&geoPolygons\\[\\]=EKB-000001440&geoPolygons\\[\\]=EKB-000001484&geoPolygons\\[\\]=EKB-000001564&geoPolygons\\[\\]=EKB-000001678&geoPolygons\\[\\]=EKB-000000388&isPlaid=true&cartBeautiesStore=true&includeDeliveryThreshold=true' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: ru,en;q=0.9' \\\r\n  -H 'cache-control: no-cache' \\\r\n  -b '_ym_uid=1779522575660610355; _ym_d=1779522575; ga-device-id=Ky71MZXKQdbCYDsESWLAy; advcake_track_id=f02ef9b2-ab67-830b-5373-cd489a54798f; advcake_session_id=347e5672-840b-ad1d-8c06-8a6ede599378; mindboxDeviceUUID=56a46a2f-5443-4d46-b185-6090a418bfbf; directCrm-session=%7B%22deviceGuid%22%3A%2256a46a2f-5443-4d46-b185-6090a418bfbf%22%7D; _gcl_au=1.1.1665288543.1779522590; _ga=GA1.1.1910355215.1779522591; tmr_lvid=1ce75d6fd3a1287209e10ce966ab478b; tmr_lvidTS=1779522590819; adrcid=Ax74XyeyAvHk6jzm0cwyokw; ga_ecom_access_token=eyJhbGciOiJSUzI1NiIsImtpZCI6IkE4QTdDRDBFNjE0REQxNzE1OTU0ODZCNjA5MjNDMTBCRDYyMDZGMTRSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6InFLZk5EbUZOMFhGWlZJYTJDU1BCQzlZZ2J4USJ9.eyJuYmYiOjE3Nzk1MzkyNTAsImV4cCI6MTc5NTMwNzI1MCwiaXNzIjoiaHR0cHM6Ly9wbGFpZC5nb2xkYXBwbGUucnUiLCJhdWQiOiJJbnRlcm5hbEFQSSIsImNsaWVudF9pZCI6ImNsaWVudF93ZWIiLCJzdWIiOiI3OTE4NDgzODEwOCIsImF1dGhfdGltZSI6MTc3OTUzOTI1MCwiaWRwIjoicGhvbmVfcHVzaF90b2tlbiIsImN2ZCI6IjMxMjk3MTkiLCJjdnYiOiIxIiwibWFnZW50b19pZCI6IjAiLCJkaWQiOiJkYzY4NjlmNmU0YjI2MzMzIiwiZ2liIjoiYjM1MDFmYjNkOTZlNWZhYiIsImN1c3RvbWVyX2lkIjoiNDM5NWMwNTgtMTM5Yi00ZTQzLWFjMTgtYWZlZmMzZDIzZTdiIiwiY3VzdG9tZXJfcGhvbmUiOiI3OTE4NDgzODEwOCIsImN1c3RvbWVyX2lzX3JlZ2lzdGVyZWQiOiIxIiwiY3VzdG9tZXJfZ3JvdXBfaWQiOiI3IiwiY3BkIjoiMCIsImp0aSI6IjM0NkNDN0RGQUFGNTVCNDBCQTMyQzc4MDQ1QzQwNDdGIiwiaWF0IjoxNzc5NTM5MjUwLCJzY29wZSI6WyJvcGVuaWQiLCJwcm9maWxlIiwiV2ViQVBJIiwib2ZmbGluZV9hY2Nlc3MiXX0.ztOxe2nEG_F0BukCW9GVk_U4zwG0TEJ4t4ty7tl1Sa7059vsNbD4Orr4jIR-1yfANXk5DLjjVIDM-a2pE_vp1TnfE9QBq3p0dyLRabQjkINjEl6bueUeA8qw2I8AS41SejKJ4k651MaAYXY65k7SvmRfuiZ-AMs6RkJz71auVSVfW-cwm4CeA0RW5oxP3gNPflHENI7A-P2Q9JDztWgqUCCAaNf8Qy3ZVKnqlndss5HG_7RLLlMArVJ3YAz7Atu3m68ez6lGRF5UlTnWQpn_pkVkt0z9Pp-e6Xy7VPwZLqWEz4yIQMdhOx7JlM0r-hQcxxgKGtQkPHEc8hd4ZTUdI9RBMX4guQQjDmg72ab6IvJMPKEde1_vI1Clyu4yqV6RCt9YB0zMfsD-4O7QgLNQGwiEalVnZyW71gwk0URGA647uDhGNIy-jML6NtjLMki4X-a2mmraFiEM1UdY63vTWIFlj9epWdhGToMmOiRwFf2QjXZYS3XDZ1KDa9Q7AvOFMvi5_aFbdxSeiR6gef59-Ip9pfddGNtWxpiU5uFa2ioExPHIblybZ77eYJXcr6DA4Hhgkn80N16SREoawlM43-pl3NcmlVyeYYQ58WTQWxPDrBpOJE33Kh5zplRVxB7kzSSVj7a9oqmK9X1UM2IiADPjkd_N-HLdFEkp4CMDVLY; ga_ecom_has_access_token=true; ga_ecom_refresh_token=1434A75B369DC645865C8BE7D2E27499E80F5C0D97AE2E6393E950DF59399C18; ga_ecom_has_refresh_token=true; ga-ecom-user-id=4395c058-139b-4e43-ac18-afefc3d23e7b; ga-session-assets=1779540019.206.690923.387047|35ea8fadbee41dc5f5431a69d8c9f4c4; ga-lang=ru; client-store-code=default; mage-cache-sessid=true; domain_sid=J6Z5t-UCPzfji0r2x3VFq%3A1779625376940; ngx_s_id=NjQ5NzQyNjUtM2VhYi00OGM2LWFlMDEtZjAxOTMyMjA5ZTQzQDE3Nzk3MDk2NDc0MjdANDUwMDAwMEAxNzc5NTY0NDUxMjE3QDA0MjljYzBkNTdmNTg1ZDI1ZGRhNmE4NTRlZmZjNDMyMzkyMTgwNmFkYzMwMThhMzdhM2Q1YmE0OGViNGI4ZmI=; acs_3=%7B%22hash%22%3A%221aa3f9523ee6c2690cb34fc702d4143056487c0d%22%2C%22nst%22%3A1779796049644%2C%22sl%22%3A%7B%22224%22%3A1779709649644%2C%221228%22%3A1779709649644%7D%7D; _sp_ses.925f=*; digi-analytics-sessionId=PTpxMCt731EJettf9C2Hn; ga-gun-init=true; _ym_isad=2; advcake_track_url=%3D20250113Qd87UUQhAVUjf%2F7SgeKufTUDICGMgsomDka%2BwQQBzlITF1dT9eEAUfT%2FqfrtTfFTD9kQ9JDiEGOm5U62Z4JFGAueXrrfNzRIMFsxYAvhfYm45xtKxdc8SOEotgyuA8wF2ovnZLOMROlnuFJrjY3WUNdNmcwTn2aO%2FCwbhJaZ0cQXiP7UQuPyJaFWa6WStkbUHVfKO49BqkSV3plJUB9mGrnckyGG9kOieXwr8xCw1cfh%2F4g9NlD9XsjCiRbiMCJks3NCwvhEGsnUbmhm18c0a2XNfbMnBOpN34%2FPdmBQwayOHUFRK5VngtQh4tCl%2FFsr3cw0mNOMd4j0Hd2ILFDNJst1fB8Q2tj9ZeS8uF2MrT4%2FD7cuSuG0XKFnhMD9DZsohNWJlRb%2FGPwrRcMo80kHOP5bGs4j8%2BCeP3fedaxyGgAQ9DceHJ9gsokgiq%2FY%2BRCsUM21qgkwCmRpGKVqJfQoiIy%2BMZvkOo8NM3jNY7FhMAsxIrqaccXJKjRSY3SfL2AG%2BjXvq4Ba9lLVAfhx5T1SnbqHUiYoKyH%2BCF0I34oNz3Ksi9wKTEMT9kUvo4hySJDpmWvp%2B1gBljIhseHUI8dyUz2VEL6jzOWgkJXTf5GJ76gR%2FP2v3rYHuL5BdWfnAvkEtLMVjidMkREoXFk1SvTZ0yJISmy2xvYVHti%2B%2FATIrKwP6Z%2FRpTM2SI8%3D; _spx=eyJpZCI6IjI5Y2Q5OWNkLTNjZTQtNDY5YS05MDQxLTY4Yzg0ODllOTUzNiIsImZpeGVkIjp7InN0YWNrIjpbMF19fQ%3D%3D; _ym_visorc=b; adrdel=1779711053741; __zzatw-goldapple=MDA0dC0cTHtmcDhhDHEWTT17CT4VHThHKHIzd2UtPm4iGkdeJ0BWUApXFhU0byZMOD5cRT4mMV5xICAbSVxUSg8/dRdZRkE2XBpLdWUvDDk6a2wkUlFDS2N8GgprLxoYfnQqUAgLYEJBcXwlLTFmJ3xLKTUdETJeV1U0O2dBVFg=AfNagQ==; tmr_detect=0%7C1779711065270; _ga_QE5MQ8XJJK=GS2.1.s1779709654$o8$g1$t1779711068$j16$l0$h0; _sp_id.925f=c620e419-41b8-41da-8449-acbefb8b4495.1779522588.7.1779711069.1779628236.5a4cd4fb-157b-4a50-8024-6589cf36a356.1ebffec4-4a4e-427b-8177-54f0f9904cc7.9e1e77e6-b204-4b58-a664-b77e185e85e6.1779709654733.53; gsscw-goldapple=bgUZ8MPNUt2pt+bCLa9QMV1GKZt5GjItPRU+CXraa6zuhO4K3OUl26D1yz3mKy8r+0Y1OjhYHcsYT2sMylQ4C9+24da1dmmGkuSY5VWKPi0Eax27UhcI1D7+/PWMdae5tvR4g9WQ74fzHi3msJJ4xwI7SrQnUcjg4GW20y1n7xx3DR1BrztgUvdibI/wVd5igyAp3ZZ0QZItjnaZJsYOQc7Zy1N5e4wZLmadsMzz+sKvGVoD7WKklgATQEChnN2zrDfe67BhEXxaSWcVvgjwalW0HLZIjnODidiWSFCSAIkMjyacF69lMQ==; cfidsw-goldapple=kUOSi2IgGT0zcbmmE9CnFpI8ZJuw3KJJvfGiNTipTFPleHS1y+6fk4a4vnC4c7TpmzqVAEIWi0lQoingql6slzCEDUH1WtwYXqnS17P5u59h5oZDWfFkIvJ0AlnKzgw5Ehef2fuCiZQqmbllO1dZ0WNXSe0NyhMKR7Q0qTs=; cfidsw-goldapple=kUOSi2IgGT0zcbmmE9CnFpI8ZJuw3KJJvfGiNTipTFPleHS1y+6fk4a4vnC4c7TpmzqVAEIWi0lQoingql6slzCEDUH1WtwYXqnS17P5u59h5oZDWfFkIvJ0AlnKzgw5Ehef2fuCiZQqmbllO1dZ0WNXSe0NyhMKR7Q0qTs=; gsscw-goldapple=bgUZ8MPNUt2pt+bCLa9QMV1GKZt5GjItPRU+CXraa6zuhO4K3OUl26D1yz3mKy8r+0Y1OjhYHcsYT2sMylQ4C9+24da1dmmGkuSY5VWKPi0Eax27UhcI1D7+/PWMdae5tvR4g9WQ74fzHi3msJJ4xwI7SrQnUcjg4GW20y1n7xx3DR1BrztgUvdibI/wVd5igyAp3ZZ0QZItjnaZJsYOQc7Zy1N5e4wZLmadsMzz+sKvGVoD7WKklgATQEChnN2zrDfe67BhEXxaSWcVvgjwalW0HLZIjnODidiWSFCSAIkMjyacF69lMQ==; fgsscw-goldapple=IrQM94e9b83f0360ef1abb5206e341b76ca30620' \\\r\n  -H 'plaid-city-id: 7dfa745e-aa19-4688-b121-b655c11e482f' \\\r\n  -H 'plaid-device-id: Ky71MZXKQdbCYDsESWLAy' \\\r\n  -H 'plaid-geo-polygons: EKB-000000389,EKB-000000387,EKB-000001386,EKB-000001440,EKB-000001484,EKB-000001564,EKB-000001678,EKB-000000388' \\\r\n  -H 'plaid-language-id: ru_RU' \\\r\n  -H 'plaid-platform: web' \\\r\n  -H 'plaid-region-id: d00e1013-16bd-4c09-b3d5-3cb09fc54bd8' \\\r\n  -H 'plaid-store-id: ru' \\\r\n  -H 'plaid-version: 1.0.0' \\\r\n  -H 'pragma: no-cache' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://goldapple.ru/89190600001-cicalfate' \\\r\n  -H 'sec-ch-ua: \"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"YaBrowser\";v=\"26.4\", \"Yowser\";v=\"2.5\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'traceparent: 00-8fc36ce0630a0e5f3c4b76e9b0e39306-1c4968c027bd3af7-00' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 YaBrowser/26.4.0.0 Safari/537.36' \\\r\n  -H 'x-gib-fgsscw-goldapple: IrQM94e9b83f0360ef1abb5206e341b76ca30620' \\\r\n  -H 'x-gib-gsscw-goldapple: bgUZ8MPNUt2pt+bCLa9QMV1GKZt5GjItPRU+CXraa6zuhO4K3OUl26D1yz3mKy8r+0Y1OjhYHcsYT2sMylQ4C9+24da1dmmGkuSY5VWKPi0Eax27UhcI1D7+/PWMdae5tvR4g9WQ74fzHi3msJJ4xwI7SrQnUcjg4GW20y1n7xx3DR1BrztgUvdibI/wVd5igyAp3ZZ0QZItjnaZJsYOQc7Zy1N5e4wZLmadsMzz+sKvGVoD7WKklgATQEChnN2zrDfe67BhEXxaSWcVvgjwalW0HLZIjnODidiWSFCSAIkMjyacF69lMQ=='"
+          },
+          "response": []
+        },
+        {
+          "name": "Clear cart",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "accept",
+                "value": "application/json, text/plain, */*"
+              },
+              {
+                "key": "accept-language",
+                "value": "ru,en;q=0.9"
+              },
+              {
+                "key": "cache-control",
+                "value": "no-cache"
+              },
+              {
+                "key": "origin",
+                "value": "https://goldapple.ru"
+              },
+              {
+                "key": "plaid-city-id",
+                "value": "{{cityId}}"
+              },
+              {
+                "key": "plaid-device-id",
+                "value": "{{deviceId}}"
+              },
+              {
+                "key": "plaid-geo-polygons",
+                "value": "{{geo}}"
+              },
+              {
+                "key": "plaid-language-id",
+                "value": "ru_RU"
+              },
+              {
+                "key": "plaid-platform",
+                "value": "web"
+              },
+              {
+                "key": "plaid-region-id",
+                "value": "{{regionId}}"
+              },
+              {
+                "key": "plaid-store-id",
+                "value": "ru"
+              },
+              {
+                "key": "plaid-version",
+                "value": "1.0.0"
+              },
+              {
+                "key": "pragma",
+                "value": "no-cache"
+              },
+              {
+                "key": "priority",
+                "value": "u=1, i"
+              },
+              {
+                "key": "referer",
+                "value": "https://goldapple.ru/89190600001-cicalfate"
+              },
+              {
+                "key": "sec-ch-ua",
+                "value": "\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"YaBrowser\";v=\"26.4\", \"Yowser\";v=\"2.5\""
+              },
+              {
+                "key": "sec-ch-ua-mobile",
+                "value": "?0"
+              },
+              {
+                "key": "sec-ch-ua-platform",
+                "value": "\"Windows\""
+              },
+              {
+                "key": "sec-fetch-dest",
+                "value": "empty"
+              },
+              {
+                "key": "sec-fetch-mode",
+                "value": "cors"
+              },
+              {
+                "key": "sec-fetch-site",
+                "value": "same-origin"
+              },
+              {
+                "key": "traceparent",
+                "value": "00-8ec736b65b30a1b7f4f007e99d46dc0f-5621cb1bed5f4fa1-00"
+              },
+              {
+                "key": "user-agent",
+                "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 YaBrowser/26.4.0.0 Safari/537.36"
+              },
+              {
+                "key": "x-gib-fgsscw-goldapple",
+                "value": "cX26e70e4c54a2ed9cfd91d8dd15050518b70969"
+              },
+              {
+                "key": "x-gib-gsscw-goldapple",
+                "value": "LW69iCeLFUJWPNHj39KmxShKrRXhcnAjQzxsMyUYwZ3A0dngrc48GKmRZbGzrmpJFXzzxHKkXpb4C0p9b2+Pf57wTGZR9yiyL/RfhzIb6y909zM3ykdXXhJNidLfF9F900ZbKaVjk7+cyONfqvWKE3CFaB65ZKiNkLLeZEo/r6ZQ0vkSXoCTrM8mEsGzqZWB13php1xQLw+RUiMXAK6aN0XEXWyjXq754txvtPK/vTFlHwUdH+CjMFZ7RHRtM+sSC5dfGv0ZsqgxGhlcquSWdLN5K4rYHbimFhTRpdNB0qJEZQZ12uA4eQ=="
+              }
+            ],
+            "url": {
+              "raw": "https://goldapple.ru/front/api/cart/items?locale=ru&itemIds=2706448352,2706447891,2706447466&cartBeautiesStore=true&includeDeliveryThreshold=true&fiasId={{fiasId}}&geoPolygons\\[\\]={{geo}}&regionId={{regionId}}&isPlaid=true",
+              "protocol": "https",
+              "host": [
+                "goldapple",
+                "ru"
+              ],
+              "path": [
+                "front",
+                "api",
+                "cart",
+                "items"
+              ],
+              "query": [
+                {
+                  "key": "locale",
+                  "value": "ru"
+                },
+                {
+                  "key": "itemIds",
+                  "value": "2706448352,2706447891,2706447466"
+                },
+                {
+                  "key": "cartBeautiesStore",
+                  "value": "true"
+                },
+                {
+                  "key": "includeDeliveryThreshold",
+                  "value": "true"
+                },
+                {
+                  "key": "fiasId",
+                  "value": "{{fiasId}}"
+                },
+                {
+                  "key": "geoPolygons\\[\\]",
+                  "value": "{{geo}}"
+                },
+                {
+                  "key": "regionId",
+                  "value": "{{regionId}}"
+                },
+                {
+                  "key": "isPlaid",
+                  "value": "true"
+                }
+              ]
+            },
+            "description": "Generated from cURL: curl 'https://goldapple.ru/front/api/cart/items?locale=ru&itemIds=2706448352,2706447891,2706447466&cartBeautiesStore=true&includeDeliveryThreshold=true&fiasId=7dfa745e-aa19-4688-b121-b655c11e482f&geoPolygons\\[\\]=EKB-000000389&geoPolygons\\[\\]=EKB-000000387&geoPolygons\\[\\]=EKB-000001386&geoPolygons\\[\\]=EKB-000001440&geoPolygons\\[\\]=EKB-000001484&geoPolygons\\[\\]=EKB-000001564&geoPolygons\\[\\]=EKB-000001678&geoPolygons\\[\\]=EKB-000000388&regionId=d00e1013-16bd-4c09-b3d5-3cb09fc54bd8&isPlaid=true' \\\r\n  -X 'DELETE' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: ru,en;q=0.9' \\\r\n  -H 'cache-control: no-cache' \\\r\n  -b '_ym_uid=1779522575660610355; _ym_d=1779522575; ga-device-id=Ky71MZXKQdbCYDsESWLAy; advcake_track_id=f02ef9b2-ab67-830b-5373-cd489a54798f; advcake_session_id=347e5672-840b-ad1d-8c06-8a6ede599378; mindboxDeviceUUID=56a46a2f-5443-4d46-b185-6090a418bfbf; directCrm-session=%7B%22deviceGuid%22%3A%2256a46a2f-5443-4d46-b185-6090a418bfbf%22%7D; _gcl_au=1.1.1665288543.1779522590; _ga=GA1.1.1910355215.1779522591; tmr_lvid=1ce75d6fd3a1287209e10ce966ab478b; tmr_lvidTS=1779522590819; adrcid=Ax74XyeyAvHk6jzm0cwyokw; ga_ecom_access_token=eyJhbGciOiJSUzI1NiIsImtpZCI6IkE4QTdDRDBFNjE0REQxNzE1OTU0ODZCNjA5MjNDMTBCRDYyMDZGMTRSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6InFLZk5EbUZOMFhGWlZJYTJDU1BCQzlZZ2J4USJ9.eyJuYmYiOjE3Nzk1MzkyNTAsImV4cCI6MTc5NTMwNzI1MCwiaXNzIjoiaHR0cHM6Ly9wbGFpZC5nb2xkYXBwbGUucnUiLCJhdWQiOiJJbnRlcm5hbEFQSSIsImNsaWVudF9pZCI6ImNsaWVudF93ZWIiLCJzdWIiOiI3OTE4NDgzODEwOCIsImF1dGhfdGltZSI6MTc3OTUzOTI1MCwiaWRwIjoicGhvbmVfcHVzaF90b2tlbiIsImN2ZCI6IjMxMjk3MTkiLCJjdnYiOiIxIiwibWFnZW50b19pZCI6IjAiLCJkaWQiOiJkYzY4NjlmNmU0YjI2MzMzIiwiZ2liIjoiYjM1MDFmYjNkOTZlNWZhYiIsImN1c3RvbWVyX2lkIjoiNDM5NWMwNTgtMTM5Yi00ZTQzLWFjMTgtYWZlZmMzZDIzZTdiIiwiY3VzdG9tZXJfcGhvbmUiOiI3OTE4NDgzODEwOCIsImN1c3RvbWVyX2lzX3JlZ2lzdGVyZWQiOiIxIiwiY3VzdG9tZXJfZ3JvdXBfaWQiOiI3IiwiY3BkIjoiMCIsImp0aSI6IjM0NkNDN0RGQUFGNTVCNDBCQTMyQzc4MDQ1QzQwNDdGIiwiaWF0IjoxNzc5NTM5MjUwLCJzY29wZSI6WyJvcGVuaWQiLCJwcm9maWxlIiwiV2ViQVBJIiwib2ZmbGluZV9hY2Nlc3MiXX0.ztOxe2nEG_F0BukCW9GVk_U4zwG0TEJ4t4ty7tl1Sa7059vsNbD4Orr4jIR-1yfANXk5DLjjVIDM-a2pE_vp1TnfE9QBq3p0dyLRabQjkINjEl6bueUeA8qw2I8AS41SejKJ4k651MaAYXY65k7SvmRfuiZ-AMs6RkJz71auVSVfW-cwm4CeA0RW5oxP3gNPflHENI7A-P2Q9JDztWgqUCCAaNf8Qy3ZVKnqlndss5HG_7RLLlMArVJ3YAz7Atu3m68ez6lGRF5UlTnWQpn_pkVkt0z9Pp-e6Xy7VPwZLqWEz4yIQMdhOx7JlM0r-hQcxxgKGtQkPHEc8hd4ZTUdI9RBMX4guQQjDmg72ab6IvJMPKEde1_vI1Clyu4yqV6RCt9YB0zMfsD-4O7QgLNQGwiEalVnZyW71gwk0URGA647uDhGNIy-jML6NtjLMki4X-a2mmraFiEM1UdY63vTWIFlj9epWdhGToMmOiRwFf2QjXZYS3XDZ1KDa9Q7AvOFMvi5_aFbdxSeiR6gef59-Ip9pfddGNtWxpiU5uFa2ioExPHIblybZ77eYJXcr6DA4Hhgkn80N16SREoawlM43-pl3NcmlVyeYYQ58WTQWxPDrBpOJE33Kh5zplRVxB7kzSSVj7a9oqmK9X1UM2IiADPjkd_N-HLdFEkp4CMDVLY; ga_ecom_has_access_token=true; ga_ecom_refresh_token=1434A75B369DC645865C8BE7D2E27499E80F5C0D97AE2E6393E950DF59399C18; ga_ecom_has_refresh_token=true; ga-ecom-user-id=4395c058-139b-4e43-ac18-afefc3d23e7b; ga-session-assets=1779540019.206.690923.387047|35ea8fadbee41dc5f5431a69d8c9f4c4; ga-lang=ru; client-store-code=default; mage-cache-sessid=true; domain_sid=J6Z5t-UCPzfji0r2x3VFq%3A1779625376940; ngx_s_id=NjQ5NzQyNjUtM2VhYi00OGM2LWFlMDEtZjAxOTMyMjA5ZTQzQDE3Nzk3MDk2NDc0MjdANDUwMDAwMEAxNzc5NTY0NDUxMjE3QDA0MjljYzBkNTdmNTg1ZDI1ZGRhNmE4NTRlZmZjNDMyMzkyMTgwNmFkYzMwMThhMzdhM2Q1YmE0OGViNGI4ZmI=; acs_3=%7B%22hash%22%3A%221aa3f9523ee6c2690cb34fc702d4143056487c0d%22%2C%22nst%22%3A1779796049644%2C%22sl%22%3A%7B%22224%22%3A1779709649644%2C%221228%22%3A1779709649644%7D%7D; _sp_ses.925f=*; ga-gun-init=true; _ym_isad=2; advcake_track_url=%3D20250113Qd87UUQhAVUjf%2F7SgeKufTUDICGMgsomDka%2BwQQBzlITF1dT9eEAUfT%2FqfrtTfFTD9kQ9JDiEGOm5U62Z4JFGAueXrrfNzRIMFsxYAvhfYm45xtKxdc8SOEotgyuA8wF2ovnZLOMROlnuFJrjY3WUNdNmcwTn2aO%2FCwbhJaZ0cQXiP7UQuPyJaFWa6WStkbUHVfKO49BqkSV3plJUB9mGrnckyGG9kOieXwr8xCw1cfh%2F4g9NlD9XsjCiRbiMCJks3NCwvhEGsnUbmhm18c0a2XNfbMnBOpN34%2FPdmBQwayOHUFRK5VngtQh4tCl%2FFsr3cw0mNOMd4j0Hd2ILFDNJst1fB8Q2tj9ZeS8uF2MrT4%2FD7cuSuG0XKFnhMD9DZsohNWJlRb%2FGPwrRcMo80kHOP5bGs4j8%2BCeP3fedaxyGgAQ9DceHJ9gsokgiq%2FY%2BRCsUM21qgkwCmRpGKVqJfQoiIy%2BMZvkOo8NM3jNY7FhMAsxIrqaccXJKjRSY3SfL2AG%2BjXvq4Ba9lLVAfhx5T1SnbqHUiYoKyH%2BCF0I34oNz3Ksi9wKTEMT9kUvo4hySJDpmWvp%2B1gBljIhseHUI8dyUz2VEL6jzOWgkJXTf5GJ76gR%2FP2v3rYHuL5BdWfnAvkEtLMVjidMkREoXFk1SvTZ0yJISmy2xvYVHti%2B%2FATIrKwP6Z%2FRpTM2SI8%3D; _spx=eyJpZCI6IjI5Y2Q5OWNkLTNjZTQtNDY5YS05MDQxLTY4Yzg0ODllOTUzNiIsImZpeGVkIjp7InN0YWNrIjpbMF19fQ%3D%3D; _ym_visorc=b; adrdel=1779711053741; __zzatw-goldapple=MDA0dC0cTHtmcDhhDHEWTT17CT4VHThHKHIzd2UtPm4iGkdeJ0BWUApXFhU0byZMOD5cRT4mMV5xICAbSVxUSg8/dRdZRkE2XBpLdWUvDDk6a2wkUlFDS2N8GgprLxoYfnQqUAgLYEJBcXwlLTFmJ3xLKTUdETJeV1U0O2dBVFg=AfNagQ==; tmr_detect=0%7C1779711065270; digi-analytics-sessionId=B3lXT8iiOYACrcpGjErxi; gsscw-goldapple=LW69iCeLFUJWPNHj39KmxShKrRXhcnAjQzxsMyUYwZ3A0dngrc48GKmRZbGzrmpJFXzzxHKkXpb4C0p9b2+Pf57wTGZR9yiyL/RfhzIb6y909zM3ykdXXhJNidLfF9F900ZbKaVjk7+cyONfqvWKE3CFaB65ZKiNkLLeZEo/r6ZQ0vkSXoCTrM8mEsGzqZWB13php1xQLw+RUiMXAK6aN0XEXWyjXq754txvtPK/vTFlHwUdH+CjMFZ7RHRtM+sSC5dfGv0ZsqgxGhlcquSWdLN5K4rYHbimFhTRpdNB0qJEZQZ12uA4eQ==; cfidsw-goldapple=VnKnld+x+as0ccHPIRv4FeQjQC87UXZwjuoKIzt1XEi7xkXTJYDAxE7+i9+MHJTs9kM1JU0HLqYYCNbglYu9BqvDVMlv2EnKL7NmUmxJ8TGV4wTnF3jp0wBpyVNH0Fwo8LhOTdu7Htsp2tqdklbEBcsrsIbY4n0fxiL10/A=; cfidsw-goldapple=VnKnld+x+as0ccHPIRv4FeQjQC87UXZwjuoKIzt1XEi7xkXTJYDAxE7+i9+MHJTs9kM1JU0HLqYYCNbglYu9BqvDVMlv2EnKL7NmUmxJ8TGV4wTnF3jp0wBpyVNH0Fwo8LhOTdu7Htsp2tqdklbEBcsrsIbY4n0fxiL10/A=; gsscw-goldapple=LW69iCeLFUJWPNHj39KmxShKrRXhcnAjQzxsMyUYwZ3A0dngrc48GKmRZbGzrmpJFXzzxHKkXpb4C0p9b2+Pf57wTGZR9yiyL/RfhzIb6y909zM3ykdXXhJNidLfF9F900ZbKaVjk7+cyONfqvWKE3CFaB65ZKiNkLLeZEo/r6ZQ0vkSXoCTrM8mEsGzqZWB13php1xQLw+RUiMXAK6aN0XEXWyjXq754txvtPK/vTFlHwUdH+CjMFZ7RHRtM+sSC5dfGv0ZsqgxGhlcquSWdLN5K4rYHbimFhTRpdNB0qJEZQZ12uA4eQ==; _ga_QE5MQ8XJJK=GS2.1.s1779709654$o8$g1$t1779711685$j42$l0$h0; _sp_id.925f=c620e419-41b8-41da-8449-acbefb8b4495.1779522588.7.1779711686.1779628236.5a4cd4fb-157b-4a50-8024-6589cf36a356.1ebffec4-4a4e-427b-8177-54f0f9904cc7.9e1e77e6-b204-4b58-a664-b77e185e85e6.1779709654733.65; fgsscw-goldapple=cX26e70e4c54a2ed9cfd91d8dd15050518b70969' \\\r\n  -H 'origin: https://goldapple.ru' \\\r\n  -H 'plaid-city-id: 7dfa745e-aa19-4688-b121-b655c11e482f' \\\r\n  -H 'plaid-device-id: Ky71MZXKQdbCYDsESWLAy' \\\r\n  -H 'plaid-geo-polygons: EKB-000000389,EKB-000000387,EKB-000001386,EKB-000001440,EKB-000001484,EKB-000001564,EKB-000001678,EKB-000000388' \\\r\n  -H 'plaid-language-id: ru_RU' \\\r\n  -H 'plaid-platform: web' \\\r\n  -H 'plaid-region-id: d00e1013-16bd-4c09-b3d5-3cb09fc54bd8' \\\r\n  -H 'plaid-store-id: ru' \\\r\n  -H 'plaid-version: 1.0.0' \\\r\n  -H 'pragma: no-cache' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://goldapple.ru/89190600001-cicalfate' \\\r\n  -H 'sec-ch-ua: \"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"YaBrowser\";v=\"26.4\", \"Yowser\";v=\"2.5\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'traceparent: 00-8ec736b65b30a1b7f4f007e99d46dc0f-5621cb1bed5f4fa1-00' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 YaBrowser/26.4.0.0 Safari/537.36' \\\r\n  -H 'x-gib-fgsscw-goldapple: cX26e70e4c54a2ed9cfd91d8dd15050518b70969' \\\r\n  -H 'x-gib-gsscw-goldapple: LW69iCeLFUJWPNHj39KmxShKrRXhcnAjQzxsMyUYwZ3A0dngrc48GKmRZbGzrmpJFXzzxHKkXpb4C0p9b2+Pf57wTGZR9yiyL/RfhzIb6y909zM3ykdXXhJNidLfF9F900ZbKaVjk7+cyONfqvWKE3CFaB65ZKiNkLLeZEo/r6ZQ0vkSXoCTrM8mEsGzqZWB13php1xQLw+RUiMXAK6aN0XEXWyjXq754txvtPK/vTFlHwUdH+CjMFZ7RHRtM+sSC5dfGv0ZsqgxGhlcquSWdLN5K4rYHbimFhTRpdNB0qJEZQZ12uA4eQ=='"
+          },
+          "response": []
+        },
+        {
+          "name": "Remove item from cart by ID",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "accept",
+                "value": "application/json, text/plain, */*"
+              },
+              {
+                "key": "accept-language",
+                "value": "ru,en;q=0.9"
+              },
+              {
+                "key": "cache-control",
+                "value": "no-cache"
+              },
+              {
+                "key": "origin",
+                "value": "https://goldapple.ru"
+              },
+              {
+                "key": "plaid-city-id",
+                "value": "{{cityId}}"
+              },
+              {
+                "key": "plaid-device-id",
+                "value": "{{deviceId}}"
+              },
+              {
+                "key": "plaid-geo-polygons",
+                "value": "{{geo}}"
+              },
+              {
+                "key": "plaid-language-id",
+                "value": "ru_RU"
+              },
+              {
+                "key": "plaid-platform",
+                "value": "web"
+              },
+              {
+                "key": "plaid-region-id",
+                "value": "{{regionId}}"
+              },
+              {
+                "key": "plaid-store-id",
+                "value": "ru"
+              },
+              {
+                "key": "plaid-version",
+                "value": "1.0.0"
+              },
+              {
+                "key": "pragma",
+                "value": "no-cache"
+              },
+              {
+                "key": "priority",
+                "value": "u=1, i"
+              },
+              {
+                "key": "referer",
+                "value": "https://goldapple.ru/89190600001-cicalfate"
+              },
+              {
+                "key": "sec-ch-ua",
+                "value": "\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"YaBrowser\";v=\"26.4\", \"Yowser\";v=\"2.5\""
+              },
+              {
+                "key": "sec-ch-ua-mobile",
+                "value": "?0"
+              },
+              {
+                "key": "sec-ch-ua-platform",
+                "value": "\"Windows\""
+              },
+              {
+                "key": "sec-fetch-dest",
+                "value": "empty"
+              },
+              {
+                "key": "sec-fetch-mode",
+                "value": "cors"
+              },
+              {
+                "key": "sec-fetch-site",
+                "value": "same-origin"
+              },
+              {
+                "key": "traceparent",
+                "value": "00-708495149375b78cbc5b22a8d094a2b7-4d155c6756cfa2eb-01"
+              },
+              {
+                "key": "user-agent",
+                "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 YaBrowser/26.4.0.0 Safari/537.36"
+              },
+              {
+                "key": "x-gib-fgsscw-goldapple",
+                "value": "6qMUb6dc2b69deead8477ecf4188faf904b6659e"
+              },
+              {
+                "key": "x-gib-gsscw-goldapple",
+                "value": "XDS/K1KInskyBlHr2lP5UwfQDZ5Im1m1OHkoW+Nena6fceqO2j2JS4npuqAOwTXk8CHEgY4TnfCZU9hEau/CkO8ztA9Ef2gFWCPvFITsBfCt0S/Ysn8hpThsYbycjHNJS8KgWivd/VxWScnxk9FbVD/I+rSTG3D2hw++5epGxvyv6nE4r4K8deQVeU8hm6ELonFxlmO1KtIJFqTKkceowh6M/HOw7Xxf+8lqFEIqnOx9Om89yzse6oOr7zG6W143K7Q/Tc5gW3xCusFwUx0l4f8DjiiPserrXWqfC/KxQJm111ur0hK1og=="
+              }
+            ],
+            "url": {
+              "raw": "https://goldapple.ru/front/api/cart/items?locale=ru&itemIds=2702542735&cartBeautiesStore=true&includeDeliveryThreshold=true&fiasId={{fiasId}}&geoPolygons\\[\\]={{geo}}&regionId={{regionId}}&isPlaid=true",
+              "protocol": "https",
+              "host": [
+                "goldapple",
+                "ru"
+              ],
+              "path": [
+                "front",
+                "api",
+                "cart",
+                "items"
+              ],
+              "query": [
+                {
+                  "key": "locale",
+                  "value": "ru"
+                },
+                {
+                  "key": "itemIds",
+                  "value": "2702542735"
+                },
+                {
+                  "key": "cartBeautiesStore",
+                  "value": "true"
+                },
+                {
+                  "key": "includeDeliveryThreshold",
+                  "value": "true"
+                },
+                {
+                  "key": "fiasId",
+                  "value": "{{fiasId}}"
+                },
+                {
+                  "key": "geoPolygons\\[\\]",
+                  "value": "{{geo}}"
+                },
+                {
+                  "key": "regionId",
+                  "value": "{{regionId}}"
+                },
+                {
+                  "key": "isPlaid",
+                  "value": "true"
+                }
+              ]
+            },
+            "description": "Generated from cURL: curl 'https://goldapple.ru/front/api/cart/items?locale=ru&itemIds=2702542735&cartBeautiesStore=true&includeDeliveryThreshold=true&fiasId=7dfa745e-aa19-4688-b121-b655c11e482f&geoPolygons\\[\\]=EKB-000000389&geoPolygons\\[\\]=EKB-000000387&geoPolygons\\[\\]=EKB-000001386&geoPolygons\\[\\]=EKB-000001440&geoPolygons\\[\\]=EKB-000001484&geoPolygons\\[\\]=EKB-000001564&geoPolygons\\[\\]=EKB-000001678&geoPolygons\\[\\]=EKB-000000388&regionId=d00e1013-16bd-4c09-b3d5-3cb09fc54bd8&isPlaid=true' \\\r\n  -X 'DELETE' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: ru,en;q=0.9' \\\r\n  -H 'cache-control: no-cache' \\\r\n  -b '_ym_uid=1779522575660610355; _ym_d=1779522575; ga-device-id=Ky71MZXKQdbCYDsESWLAy; advcake_track_id=f02ef9b2-ab67-830b-5373-cd489a54798f; advcake_session_id=347e5672-840b-ad1d-8c06-8a6ede599378; mindboxDeviceUUID=56a46a2f-5443-4d46-b185-6090a418bfbf; directCrm-session=%7B%22deviceGuid%22%3A%2256a46a2f-5443-4d46-b185-6090a418bfbf%22%7D; _gcl_au=1.1.1665288543.1779522590; _ga=GA1.1.1910355215.1779522591; tmr_lvid=1ce75d6fd3a1287209e10ce966ab478b; tmr_lvidTS=1779522590819; adrcid=Ax74XyeyAvHk6jzm0cwyokw; ga_ecom_access_token=eyJhbGciOiJSUzI1NiIsImtpZCI6IkE4QTdDRDBFNjE0REQxNzE1OTU0ODZCNjA5MjNDMTBCRDYyMDZGMTRSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6InFLZk5EbUZOMFhGWlZJYTJDU1BCQzlZZ2J4USJ9.eyJuYmYiOjE3Nzk1MzkyNTAsImV4cCI6MTc5NTMwNzI1MCwiaXNzIjoiaHR0cHM6Ly9wbGFpZC5nb2xkYXBwbGUucnUiLCJhdWQiOiJJbnRlcm5hbEFQSSIsImNsaWVudF9pZCI6ImNsaWVudF93ZWIiLCJzdWIiOiI3OTE4NDgzODEwOCIsImF1dGhfdGltZSI6MTc3OTUzOTI1MCwiaWRwIjoicGhvbmVfcHVzaF90b2tlbiIsImN2ZCI6IjMxMjk3MTkiLCJjdnYiOiIxIiwibWFnZW50b19pZCI6IjAiLCJkaWQiOiJkYzY4NjlmNmU0YjI2MzMzIiwiZ2liIjoiYjM1MDFmYjNkOTZlNWZhYiIsImN1c3RvbWVyX2lkIjoiNDM5NWMwNTgtMTM5Yi00ZTQzLWFjMTgtYWZlZmMzZDIzZTdiIiwiY3VzdG9tZXJfcGhvbmUiOiI3OTE4NDgzODEwOCIsImN1c3RvbWVyX2lzX3JlZ2lzdGVyZWQiOiIxIiwiY3VzdG9tZXJfZ3JvdXBfaWQiOiI3IiwiY3BkIjoiMCIsImp0aSI6IjM0NkNDN0RGQUFGNTVCNDBCQTMyQzc4MDQ1QzQwNDdGIiwiaWF0IjoxNzc5NTM5MjUwLCJzY29wZSI6WyJvcGVuaWQiLCJwcm9maWxlIiwiV2ViQVBJIiwib2ZmbGluZV9hY2Nlc3MiXX0.ztOxe2nEG_F0BukCW9GVk_U4zwG0TEJ4t4ty7tl1Sa7059vsNbD4Orr4jIR-1yfANXk5DLjjVIDM-a2pE_vp1TnfE9QBq3p0dyLRabQjkINjEl6bueUeA8qw2I8AS41SejKJ4k651MaAYXY65k7SvmRfuiZ-AMs6RkJz71auVSVfW-cwm4CeA0RW5oxP3gNPflHENI7A-P2Q9JDztWgqUCCAaNf8Qy3ZVKnqlndss5HG_7RLLlMArVJ3YAz7Atu3m68ez6lGRF5UlTnWQpn_pkVkt0z9Pp-e6Xy7VPwZLqWEz4yIQMdhOx7JlM0r-hQcxxgKGtQkPHEc8hd4ZTUdI9RBMX4guQQjDmg72ab6IvJMPKEde1_vI1Clyu4yqV6RCt9YB0zMfsD-4O7QgLNQGwiEalVnZyW71gwk0URGA647uDhGNIy-jML6NtjLMki4X-a2mmraFiEM1UdY63vTWIFlj9epWdhGToMmOiRwFf2QjXZYS3XDZ1KDa9Q7AvOFMvi5_aFbdxSeiR6gef59-Ip9pfddGNtWxpiU5uFa2ioExPHIblybZ77eYJXcr6DA4Hhgkn80N16SREoawlM43-pl3NcmlVyeYYQ58WTQWxPDrBpOJE33Kh5zplRVxB7kzSSVj7a9oqmK9X1UM2IiADPjkd_N-HLdFEkp4CMDVLY; ga_ecom_has_access_token=true; ga_ecom_refresh_token=1434A75B369DC645865C8BE7D2E27499E80F5C0D97AE2E6393E950DF59399C18; ga_ecom_has_refresh_token=true; ga-ecom-user-id=4395c058-139b-4e43-ac18-afefc3d23e7b; ga-session-assets=1779540019.206.690923.387047|35ea8fadbee41dc5f5431a69d8c9f4c4; ga-lang=ru; client-store-code=default; mage-cache-sessid=true; domain_sid=J6Z5t-UCPzfji0r2x3VFq%3A1779625376940; ngx_s_id=NjQ5NzQyNjUtM2VhYi00OGM2LWFlMDEtZjAxOTMyMjA5ZTQzQDE3Nzk3MDk2NDc0MjdANDUwMDAwMEAxNzc5NTY0NDUxMjE3QDA0MjljYzBkNTdmNTg1ZDI1ZGRhNmE4NTRlZmZjNDMyMzkyMTgwNmFkYzMwMThhMzdhM2Q1YmE0OGViNGI4ZmI=; acs_3=%7B%22hash%22%3A%221aa3f9523ee6c2690cb34fc702d4143056487c0d%22%2C%22nst%22%3A1779796049644%2C%22sl%22%3A%7B%22224%22%3A1779709649644%2C%221228%22%3A1779709649644%7D%7D; _sp_ses.925f=*; ga-gun-init=true; _ym_isad=2; advcake_track_url=%3D20250113Qd87UUQhAVUjf%2F7SgeKufTUDICGMgsomDka%2BwQQBzlITF1dT9eEAUfT%2FqfrtTfFTD9kQ9JDiEGOm5U62Z4JFGAueXrrfNzRIMFsxYAvhfYm45xtKxdc8SOEotgyuA8wF2ovnZLOMROlnuFJrjY3WUNdNmcwTn2aO%2FCwbhJaZ0cQXiP7UQuPyJaFWa6WStkbUHVfKO49BqkSV3plJUB9mGrnckyGG9kOieXwr8xCw1cfh%2F4g9NlD9XsjCiRbiMCJks3NCwvhEGsnUbmhm18c0a2XNfbMnBOpN34%2FPdmBQwayOHUFRK5VngtQh4tCl%2FFsr3cw0mNOMd4j0Hd2ILFDNJst1fB8Q2tj9ZeS8uF2MrT4%2FD7cuSuG0XKFnhMD9DZsohNWJlRb%2FGPwrRcMo80kHOP5bGs4j8%2BCeP3fedaxyGgAQ9DceHJ9gsokgiq%2FY%2BRCsUM21qgkwCmRpGKVqJfQoiIy%2BMZvkOo8NM3jNY7FhMAsxIrqaccXJKjRSY3SfL2AG%2BjXvq4Ba9lLVAfhx5T1SnbqHUiYoKyH%2BCF0I34oNz3Ksi9wKTEMT9kUvo4hySJDpmWvp%2B1gBljIhseHUI8dyUz2VEL6jzOWgkJXTf5GJ76gR%2FP2v3rYHuL5BdWfnAvkEtLMVjidMkREoXFk1SvTZ0yJISmy2xvYVHti%2B%2FATIrKwP6Z%2FRpTM2SI8%3D; _spx=eyJpZCI6IjI5Y2Q5OWNkLTNjZTQtNDY5YS05MDQxLTY4Yzg0ODllOTUzNiIsImZpeGVkIjp7InN0YWNrIjpbMF19fQ%3D%3D; _ym_visorc=b; adrdel=1779711053741; __zzatw-goldapple=MDA0dC0cTHtmcDhhDHEWTT17CT4VHThHKHIzd2UtPm4iGkdeJ0BWUApXFhU0byZMOD5cRT4mMV5xICAbSVxUSg8/dRdZRkE2XBpLdWUvDDk6a2wkUlFDS2N8GgprLxoYfnQqUAgLYEJBcXwlLTFmJ3xLKTUdETJeV1U0O2dBVFg=AfNagQ==; tmr_detect=0%7C1779711065270; _ga_QE5MQ8XJJK=GS2.1.s1779709654$o8$g1$t1779711562$j60$l0$h0; digi-analytics-sessionId=B3lXT8iiOYACrcpGjErxi; _sp_id.925f=c620e419-41b8-41da-8449-acbefb8b4495.1779522588.7.1779711569.1779628236.5a4cd4fb-157b-4a50-8024-6589cf36a356.1ebffec4-4a4e-427b-8177-54f0f9904cc7.9e1e77e6-b204-4b58-a664-b77e185e85e6.1779709654733.56; gsscw-goldapple=XDS/K1KInskyBlHr2lP5UwfQDZ5Im1m1OHkoW+Nena6fceqO2j2JS4npuqAOwTXk8CHEgY4TnfCZU9hEau/CkO8ztA9Ef2gFWCPvFITsBfCt0S/Ysn8hpThsYbycjHNJS8KgWivd/VxWScnxk9FbVD/I+rSTG3D2hw++5epGxvyv6nE4r4K8deQVeU8hm6ELonFxlmO1KtIJFqTKkceowh6M/HOw7Xxf+8lqFEIqnOx9Om89yzse6oOr7zG6W143K7Q/Tc5gW3xCusFwUx0l4f8DjiiPserrXWqfC/KxQJm111ur0hK1og==; cfidsw-goldapple=7LwJbWWu4EYijcV0VCMaU5KyFKwYn2cuRW1oRd5gYFPDaLEkaeajDpLAenV/VNJqr97SlIzVRnPSXHqu0oU6slLWpd2x/j6MCUgvPDRurLrqOmE63itaYHek9Y0qDhq9/XpsBmCU22Zyc+UGf7gclwSX/9zUGDNypKmKtI8=; cfidsw-goldapple=7LwJbWWu4EYijcV0VCMaU5KyFKwYn2cuRW1oRd5gYFPDaLEkaeajDpLAenV/VNJqr97SlIzVRnPSXHqu0oU6slLWpd2x/j6MCUgvPDRurLrqOmE63itaYHek9Y0qDhq9/XpsBmCU22Zyc+UGf7gclwSX/9zUGDNypKmKtI8=; gsscw-goldapple=XDS/K1KInskyBlHr2lP5UwfQDZ5Im1m1OHkoW+Nena6fceqO2j2JS4npuqAOwTXk8CHEgY4TnfCZU9hEau/CkO8ztA9Ef2gFWCPvFITsBfCt0S/Ysn8hpThsYbycjHNJS8KgWivd/VxWScnxk9FbVD/I+rSTG3D2hw++5epGxvyv6nE4r4K8deQVeU8hm6ELonFxlmO1KtIJFqTKkceowh6M/HOw7Xxf+8lqFEIqnOx9Om89yzse6oOr7zG6W143K7Q/Tc5gW3xCusFwUx0l4f8DjiiPserrXWqfC/KxQJm111ur0hK1og==; fgsscw-goldapple=6qMUb6dc2b69deead8477ecf4188faf904b6659e' \\\r\n  -H 'origin: https://goldapple.ru' \\\r\n  -H 'plaid-city-id: 7dfa745e-aa19-4688-b121-b655c11e482f' \\\r\n  -H 'plaid-device-id: Ky71MZXKQdbCYDsESWLAy' \\\r\n  -H 'plaid-geo-polygons: EKB-000000389,EKB-000000387,EKB-000001386,EKB-000001440,EKB-000001484,EKB-000001564,EKB-000001678,EKB-000000388' \\\r\n  -H 'plaid-language-id: ru_RU' \\\r\n  -H 'plaid-platform: web' \\\r\n  -H 'plaid-region-id: d00e1013-16bd-4c09-b3d5-3cb09fc54bd8' \\\r\n  -H 'plaid-store-id: ru' \\\r\n  -H 'plaid-version: 1.0.0' \\\r\n  -H 'pragma: no-cache' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://goldapple.ru/89190600001-cicalfate' \\\r\n  -H 'sec-ch-ua: \"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"YaBrowser\";v=\"26.4\", \"Yowser\";v=\"2.5\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'traceparent: 00-708495149375b78cbc5b22a8d094a2b7-4d155c6756cfa2eb-01' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 YaBrowser/26.4.0.0 Safari/537.36' \\\r\n  -H 'x-gib-fgsscw-goldapple: 6qMUb6dc2b69deead8477ecf4188faf904b6659e' \\\r\n  -H 'x-gib-gsscw-goldapple: XDS/K1KInskyBlHr2lP5UwfQDZ5Im1m1OHkoW+Nena6fceqO2j2JS4npuqAOwTXk8CHEgY4TnfCZU9hEau/CkO8ztA9Ef2gFWCPvFITsBfCt0S/Ysn8hpThsYbycjHNJS8KgWivd/VxWScnxk9FbVD/I+rSTG3D2hw++5epGxvyv6nE4r4K8deQVeU8hm6ELonFxlmO1KtIJFqTKkceowh6M/HOw7Xxf+8lqFEIqnOx9Om89yzse6oOr7zG6W143K7Q/Tc5gW3xCusFwUx0l4f8DjiiPserrXWqfC/KxQJm111ur0hK1og=='"
+          },
+          "response": []
+        },
+        {
+          "name": "Update item quantity",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "accept",
+                "value": "application/json, text/plain, */*"
+              },
+              {
+                "key": "accept-language",
+                "value": "ru,en;q=0.9"
+              },
+              {
+                "key": "cache-control",
+                "value": "no-cache"
+              },
+              {
+                "key": "content-type",
+                "value": "application/json"
+              },
+              {
+                "key": "origin",
+                "value": "https://goldapple.ru"
+              },
+              {
+                "key": "plaid-city-id",
+                "value": "{{cityId}}"
+              },
+              {
+                "key": "plaid-device-id",
+                "value": "{{deviceId}}"
+              },
+              {
+                "key": "plaid-geo-polygons",
+                "value": "{{geo}}"
+              },
+              {
+                "key": "plaid-language-id",
+                "value": "ru_RU"
+              },
+              {
+                "key": "plaid-platform",
+                "value": "web"
+              },
+              {
+                "key": "plaid-region-id",
+                "value": "{{regionId}}"
+              },
+              {
+                "key": "plaid-store-id",
+                "value": "ru"
+              },
+              {
+                "key": "plaid-version",
+                "value": "1.0.0"
+              },
+              {
+                "key": "pragma",
+                "value": "no-cache"
+              },
+              {
+                "key": "priority",
+                "value": "u=1, i"
+              },
+              {
+                "key": "referer",
+                "value": "https://goldapple.ru/89190600001-cicalfate"
+              },
+              {
+                "key": "sec-ch-ua",
+                "value": "\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"YaBrowser\";v=\"26.4\", \"Yowser\";v=\"2.5\""
+              },
+              {
+                "key": "sec-ch-ua-mobile",
+                "value": "?0"
+              },
+              {
+                "key": "sec-ch-ua-platform",
+                "value": "\"Windows\""
+              },
+              {
+                "key": "sec-fetch-dest",
+                "value": "empty"
+              },
+              {
+                "key": "sec-fetch-mode",
+                "value": "cors"
+              },
+              {
+                "key": "sec-fetch-site",
+                "value": "same-origin"
+              },
+              {
+                "key": "traceparent",
+                "value": "00-152fb05e9d934f48a496519aa3e7b390-5ed14d2018ca248f-00"
+              },
+              {
+                "key": "user-agent",
+                "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 YaBrowser/26.4.0.0 Safari/537.36"
+              },
+              {
+                "key": "x-gib-fgsscw-goldapple",
+                "value": "1oJx8cc62d1b9cb340e64d2f2d25d849351f948d"
+              },
+              {
+                "key": "x-gib-gsscw-goldapple",
+                "value": "k+I3SfkjtreYYgZEWx/ZjGNBs0LU6A3dBGMa+VyGhYy4dSTmKEOiap25A8AOokO2SxoV1jhbljFu5uP+un9dpWHUk8JDrqpu/bMuvNUF2aJw6PNN93nVVbrga0wPUNUE4ok1CN50OEVH31qih/cPswXIaA7RS1gOYlGnCuPGj+yUthm2TtophvG3/HTxNWjp2BFO+AUTHLrFTILsQbGkvLsMdrdLqqcrPCCBXK31ARdMu+L3cbJmE+8AjFeR73boohv8+tuNTPTec4RetcofkZOs1SypFGdxwxcAGhLsBLik0gEpfrT0XQ=="
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"itemId\": 2706456047,\r\n    \"itemQty\": 3,\r\n    \"cartBeautiesStore\": true,\r\n    \"includeDeliveryThreshold\": true,\r\n    \"fiasId\": \"{{fiasId}}\",\r\n    \"cityDistrict\": null,\r\n    \"geoPolygons\": \"{{geo}}\",\r\n    \"regionId\": \"{{regionId}}\",\r\n    \"isPlaid\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://goldapple.ru/front/api/cart/item/update-qty?locale=ru",
+              "protocol": "https",
+              "host": [
+                "goldapple",
+                "ru"
+              ],
+              "path": [
+                "front",
+                "api",
+                "cart",
+                "item",
+                "update-qty"
+              ],
+              "query": [
+                {
+                  "key": "locale",
+                  "value": "ru"
+                }
+              ]
+            },
+            "description": "Generated from cURL: curl 'https://goldapple.ru/front/api/cart/item/update-qty?locale=ru' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: ru,en;q=0.9' \\\r\n  -H 'cache-control: no-cache' \\\r\n  -H 'content-type: application/json' \\\r\n  -b '_ym_uid=1779522575660610355; _ym_d=1779522575; ga-device-id=Ky71MZXKQdbCYDsESWLAy; advcake_track_id=f02ef9b2-ab67-830b-5373-cd489a54798f; advcake_session_id=347e5672-840b-ad1d-8c06-8a6ede599378; mindboxDeviceUUID=56a46a2f-5443-4d46-b185-6090a418bfbf; directCrm-session=%7B%22deviceGuid%22%3A%2256a46a2f-5443-4d46-b185-6090a418bfbf%22%7D; _gcl_au=1.1.1665288543.1779522590; _ga=GA1.1.1910355215.1779522591; tmr_lvid=1ce75d6fd3a1287209e10ce966ab478b; tmr_lvidTS=1779522590819; adrcid=Ax74XyeyAvHk6jzm0cwyokw; ga_ecom_access_token=eyJhbGciOiJSUzI1NiIsImtpZCI6IkE4QTdDRDBFNjE0REQxNzE1OTU0ODZCNjA5MjNDMTBCRDYyMDZGMTRSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6InFLZk5EbUZOMFhGWlZJYTJDU1BCQzlZZ2J4USJ9.eyJuYmYiOjE3Nzk1MzkyNTAsImV4cCI6MTc5NTMwNzI1MCwiaXNzIjoiaHR0cHM6Ly9wbGFpZC5nb2xkYXBwbGUucnUiLCJhdWQiOiJJbnRlcm5hbEFQSSIsImNsaWVudF9pZCI6ImNsaWVudF93ZWIiLCJzdWIiOiI3OTE4NDgzODEwOCIsImF1dGhfdGltZSI6MTc3OTUzOTI1MCwiaWRwIjoicGhvbmVfcHVzaF90b2tlbiIsImN2ZCI6IjMxMjk3MTkiLCJjdnYiOiIxIiwibWFnZW50b19pZCI6IjAiLCJkaWQiOiJkYzY4NjlmNmU0YjI2MzMzIiwiZ2liIjoiYjM1MDFmYjNkOTZlNWZhYiIsImN1c3RvbWVyX2lkIjoiNDM5NWMwNTgtMTM5Yi00ZTQzLWFjMTgtYWZlZmMzZDIzZTdiIiwiY3VzdG9tZXJfcGhvbmUiOiI3OTE4NDgzODEwOCIsImN1c3RvbWVyX2lzX3JlZ2lzdGVyZWQiOiIxIiwiY3VzdG9tZXJfZ3JvdXBfaWQiOiI3IiwiY3BkIjoiMCIsImp0aSI6IjM0NkNDN0RGQUFGNTVCNDBCQTMyQzc4MDQ1QzQwNDdGIiwiaWF0IjoxNzc5NTM5MjUwLCJzY29wZSI6WyJvcGVuaWQiLCJwcm9maWxlIiwiV2ViQVBJIiwib2ZmbGluZV9hY2Nlc3MiXX0.ztOxe2nEG_F0BukCW9GVk_U4zwG0TEJ4t4ty7tl1Sa7059vsNbD4Orr4jIR-1yfANXk5DLjjVIDM-a2pE_vp1TnfE9QBq3p0dyLRabQjkINjEl6bueUeA8qw2I8AS41SejKJ4k651MaAYXY65k7SvmRfuiZ-AMs6RkJz71auVSVfW-cwm4CeA0RW5oxP3gNPflHENI7A-P2Q9JDztWgqUCCAaNf8Qy3ZVKnqlndss5HG_7RLLlMArVJ3YAz7Atu3m68ez6lGRF5UlTnWQpn_pkVkt0z9Pp-e6Xy7VPwZLqWEz4yIQMdhOx7JlM0r-hQcxxgKGtQkPHEc8hd4ZTUdI9RBMX4guQQjDmg72ab6IvJMPKEde1_vI1Clyu4yqV6RCt9YB0zMfsD-4O7QgLNQGwiEalVnZyW71gwk0URGA647uDhGNIy-jML6NtjLMki4X-a2mmraFiEM1UdY63vTWIFlj9epWdhGToMmOiRwFf2QjXZYS3XDZ1KDa9Q7AvOFMvi5_aFbdxSeiR6gef59-Ip9pfddGNtWxpiU5uFa2ioExPHIblybZ77eYJXcr6DA4Hhgkn80N16SREoawlM43-pl3NcmlVyeYYQ58WTQWxPDrBpOJE33Kh5zplRVxB7kzSSVj7a9oqmK9X1UM2IiADPjkd_N-HLdFEkp4CMDVLY; ga_ecom_has_access_token=true; ga_ecom_refresh_token=1434A75B369DC645865C8BE7D2E27499E80F5C0D97AE2E6393E950DF59399C18; ga_ecom_has_refresh_token=true; ga-ecom-user-id=4395c058-139b-4e43-ac18-afefc3d23e7b; ga-session-assets=1779540019.206.690923.387047|35ea8fadbee41dc5f5431a69d8c9f4c4; ga-lang=ru; client-store-code=default; mage-cache-sessid=true; domain_sid=J6Z5t-UCPzfji0r2x3VFq%3A1779625376940; ngx_s_id=NjQ5NzQyNjUtM2VhYi00OGM2LWFlMDEtZjAxOTMyMjA5ZTQzQDE3Nzk3MDk2NDc0MjdANDUwMDAwMEAxNzc5NTY0NDUxMjE3QDA0MjljYzBkNTdmNTg1ZDI1ZGRhNmE4NTRlZmZjNDMyMzkyMTgwNmFkYzMwMThhMzdhM2Q1YmE0OGViNGI4ZmI=; acs_3=%7B%22hash%22%3A%221aa3f9523ee6c2690cb34fc702d4143056487c0d%22%2C%22nst%22%3A1779796049644%2C%22sl%22%3A%7B%22224%22%3A1779709649644%2C%221228%22%3A1779709649644%7D%7D; _sp_ses.925f=*; ga-gun-init=true; _ym_isad=2; advcake_track_url=%3D20250113Qd87UUQhAVUjf%2F7SgeKufTUDICGMgsomDka%2BwQQBzlITF1dT9eEAUfT%2FqfrtTfFTD9kQ9JDiEGOm5U62Z4JFGAueXrrfNzRIMFsxYAvhfYm45xtKxdc8SOEotgyuA8wF2ovnZLOMROlnuFJrjY3WUNdNmcwTn2aO%2FCwbhJaZ0cQXiP7UQuPyJaFWa6WStkbUHVfKO49BqkSV3plJUB9mGrnckyGG9kOieXwr8xCw1cfh%2F4g9NlD9XsjCiRbiMCJks3NCwvhEGsnUbmhm18c0a2XNfbMnBOpN34%2FPdmBQwayOHUFRK5VngtQh4tCl%2FFsr3cw0mNOMd4j0Hd2ILFDNJst1fB8Q2tj9ZeS8uF2MrT4%2FD7cuSuG0XKFnhMD9DZsohNWJlRb%2FGPwrRcMo80kHOP5bGs4j8%2BCeP3fedaxyGgAQ9DceHJ9gsokgiq%2FY%2BRCsUM21qgkwCmRpGKVqJfQoiIy%2BMZvkOo8NM3jNY7FhMAsxIrqaccXJKjRSY3SfL2AG%2BjXvq4Ba9lLVAfhx5T1SnbqHUiYoKyH%2BCF0I34oNz3Ksi9wKTEMT9kUvo4hySJDpmWvp%2B1gBljIhseHUI8dyUz2VEL6jzOWgkJXTf5GJ76gR%2FP2v3rYHuL5BdWfnAvkEtLMVjidMkREoXFk1SvTZ0yJISmy2xvYVHti%2B%2FATIrKwP6Z%2FRpTM2SI8%3D; _spx=eyJpZCI6IjI5Y2Q5OWNkLTNjZTQtNDY5YS05MDQxLTY4Yzg0ODllOTUzNiIsImZpeGVkIjp7InN0YWNrIjpbMF19fQ%3D%3D; _ym_visorc=b; adrdel=1779711053741; __zzatw-goldapple=MDA0dC0cTHtmcDhhDHEWTT17CT4VHThHKHIzd2UtPm4iGkdeJ0BWUApXFhU0byZMOD5cRT4mMV5xICAbSVxUSg8/dRdZRkE2XBpLdWUvDDk6a2wkUlFDS2N8GgprLxoYfnQqUAgLYEJBcXwlLTFmJ3xLKTUdETJeV1U0O2dBVFg=AfNagQ==; tmr_detect=0%7C1779711065270; digi-analytics-sessionId=B3lXT8iiOYACrcpGjErxi; _sp_id.925f=c620e419-41b8-41da-8449-acbefb8b4495.1779522588.7.1779711803.1779628236.5a4cd4fb-157b-4a50-8024-6589cf36a356.1ebffec4-4a4e-427b-8177-54f0f9904cc7.9e1e77e6-b204-4b58-a664-b77e185e85e6.1779709654733.68; gsscw-goldapple=k+I3SfkjtreYYgZEWx/ZjGNBs0LU6A3dBGMa+VyGhYy4dSTmKEOiap25A8AOokO2SxoV1jhbljFu5uP+un9dpWHUk8JDrqpu/bMuvNUF2aJw6PNN93nVVbrga0wPUNUE4ok1CN50OEVH31qih/cPswXIaA7RS1gOYlGnCuPGj+yUthm2TtophvG3/HTxNWjp2BFO+AUTHLrFTILsQbGkvLsMdrdLqqcrPCCBXK31ARdMu+L3cbJmE+8AjFeR73boohv8+tuNTPTec4RetcofkZOs1SypFGdxwxcAGhLsBLik0gEpfrT0XQ==; cfidsw-goldapple=3EmBPlcbWB4Xtw8pNcYbwM/QqarZLQg3zCh8+IqvE9uzOLXQkiheyLsZD7rr6oX68qR/bhC6EcT58lzh+wPBRJmE00BgU4/G6IdOODKAw3Mw7Gf+WQs3XxtnAMtroQJYAJpDq5woCmbdyOUwU2ycNL5AWaTkKCyx2nzV8Dw=; cfidsw-goldapple=3EmBPlcbWB4Xtw8pNcYbwM/QqarZLQg3zCh8+IqvE9uzOLXQkiheyLsZD7rr6oX68qR/bhC6EcT58lzh+wPBRJmE00BgU4/G6IdOODKAw3Mw7Gf+WQs3XxtnAMtroQJYAJpDq5woCmbdyOUwU2ycNL5AWaTkKCyx2nzV8Dw=; gsscw-goldapple=k+I3SfkjtreYYgZEWx/ZjGNBs0LU6A3dBGMa+VyGhYy4dSTmKEOiap25A8AOokO2SxoV1jhbljFu5uP+un9dpWHUk8JDrqpu/bMuvNUF2aJw6PNN93nVVbrga0wPUNUE4ok1CN50OEVH31qih/cPswXIaA7RS1gOYlGnCuPGj+yUthm2TtophvG3/HTxNWjp2BFO+AUTHLrFTILsQbGkvLsMdrdLqqcrPCCBXK31ARdMu+L3cbJmE+8AjFeR73boohv8+tuNTPTec4RetcofkZOs1SypFGdxwxcAGhLsBLik0gEpfrT0XQ==; _ga_QE5MQ8XJJK=GS2.1.s1779709654$o8$g1$t1779711814$j43$l0$h0; fgsscw-goldapple=1oJx8cc62d1b9cb340e64d2f2d25d849351f948d' \\\r\n  -H 'origin: https://goldapple.ru' \\\r\n  -H 'plaid-city-id: 7dfa745e-aa19-4688-b121-b655c11e482f' \\\r\n  -H 'plaid-device-id: Ky71MZXKQdbCYDsESWLAy' \\\r\n  -H 'plaid-geo-polygons: EKB-000000389,EKB-000000387,EKB-000001386,EKB-000001440,EKB-000001484,EKB-000001564,EKB-000001678,EKB-000000388' \\\r\n  -H 'plaid-language-id: ru_RU' \\\r\n  -H 'plaid-platform: web' \\\r\n  -H 'plaid-region-id: d00e1013-16bd-4c09-b3d5-3cb09fc54bd8' \\\r\n  -H 'plaid-store-id: ru' \\\r\n  -H 'plaid-version: 1.0.0' \\\r\n  -H 'pragma: no-cache' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://goldapple.ru/89190600001-cicalfate' \\\r\n  -H 'sec-ch-ua: \"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"YaBrowser\";v=\"26.4\", \"Yowser\";v=\"2.5\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'traceparent: 00-152fb05e9d934f48a496519aa3e7b390-5ed14d2018ca248f-00' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 YaBrowser/26.4.0.0 Safari/537.36' \\\r\n  -H 'x-gib-fgsscw-goldapple: 1oJx8cc62d1b9cb340e64d2f2d25d849351f948d' \\\r\n  -H 'x-gib-gsscw-goldapple: k+I3SfkjtreYYgZEWx/ZjGNBs0LU6A3dBGMa+VyGhYy4dSTmKEOiap25A8AOokO2SxoV1jhbljFu5uP+un9dpWHUk8JDrqpu/bMuvNUF2aJw6PNN93nVVbrga0wPUNUE4ok1CN50OEVH31qih/cPswXIaA7RS1gOYlGnCuPGj+yUthm2TtophvG3/HTxNWjp2BFO+AUTHLrFTILsQbGkvLsMdrdLqqcrPCCBXK31ARdMu+L3cbJmE+8AjFeR73boohv8+tuNTPTec4RetcofkZOs1SypFGdxwxcAGhLsBLik0gEpfrT0XQ==' \\\r\n  --data-raw '{\"itemId\":2706456047,\"itemQty\":3,\"cartBeautiesStore\":true,\"includeDeliveryThreshold\":true,\"fiasId\":\"7dfa745e-aa19-4688-b121-b655c11e482f\",\"cityDistrict\":null,\"geoPolygons\":[\"EKB-000000389\",\"EKB-000000387\",\"EKB-000001386\",\"EKB-000001440\",\"EKB-000001484\",\"EKB-000001564\",\"EKB-000001678\",\"EKB-000000388\"],\"regionId\":\"d00e1013-16bd-4c09-b3d5-3cb09fc54bd8\",\"isPlaid\":true}'"
+          },
+          "response": []
+        },
+        {
+          "name": "Apply coupon",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "accept",
+                "value": "application/json, text/plain, */*"
+              },
+              {
+                "key": "accept-language",
+                "value": "ru,en;q=0.9"
+              },
+              {
+                "key": "cache-control",
+                "value": "no-cache"
+              },
+              {
+                "key": "content-type",
+                "value": "application/json"
+              },
+              {
+                "key": "origin",
+                "value": "https://goldapple.ru"
+              },
+              {
+                "key": "plaid-city-id",
+                "value": "{{cityId}}"
+              },
+              {
+                "key": "plaid-device-id",
+                "value": "{{deviceId}}"
+              },
+              {
+                "key": "plaid-geo-polygons",
+                "value": "{{geo}}"
+              },
+              {
+                "key": "plaid-language-id",
+                "value": "ru_RU"
+              },
+              {
+                "key": "plaid-platform",
+                "value": "web"
+              },
+              {
+                "key": "plaid-region-id",
+                "value": "{{regionId}}"
+              },
+              {
+                "key": "plaid-store-id",
+                "value": "ru"
+              },
+              {
+                "key": "plaid-version",
+                "value": "1.0.0"
+              },
+              {
+                "key": "pragma",
+                "value": "no-cache"
+              },
+              {
+                "key": "priority",
+                "value": "u=1, i"
+              },
+              {
+                "key": "referer",
+                "value": "https://goldapple.ru/89190600001-cicalfate"
+              },
+              {
+                "key": "sec-ch-ua",
+                "value": "\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"YaBrowser\";v=\"26.4\", \"Yowser\";v=\"2.5\""
+              },
+              {
+                "key": "sec-ch-ua-mobile",
+                "value": "?0"
+              },
+              {
+                "key": "sec-ch-ua-platform",
+                "value": "\"Windows\""
+              },
+              {
+                "key": "sec-fetch-dest",
+                "value": "empty"
+              },
+              {
+                "key": "sec-fetch-mode",
+                "value": "cors"
+              },
+              {
+                "key": "sec-fetch-site",
+                "value": "same-origin"
+              },
+              {
+                "key": "traceparent",
+                "value": "00-8861f5e5c5ce5e98969f3309f6d5b1e5-694e3b77824fab5f-00"
+              },
+              {
+                "key": "user-agent",
+                "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 YaBrowser/26.4.0.0 Safari/537.36"
+              },
+              {
+                "key": "x-gib-fgsscw-goldapple",
+                "value": "ZpkG894d4c7989228824fba178ec1deaddf41919"
+              },
+              {
+                "key": "x-gib-gsscw-goldapple",
+                "value": "yQvPYpHFoA/hADkyWISkF93pmxA8FwFwQVXA25PYdzNkDUo6sGkToT8xIkHSEXtRBpQzg1d8olqZcT2NsY4kHLFGIULCV7dE9lRDduKxptglruGyI5MIlXi/wtorDlcU/ieo6MM7WPy0eCrMsTdxAUJBVN8SPi0UencQHyL/JhXCK3lBjXOw/o2X68Pp/D1eLbzAj2Bisx+x7PaT9svoGcsV0xQ8JcxJRQfGsTkpC8eU40O4MhlaTkPRlJtXdl+y8vqyog+2e57tZX3ntkXFxEXW77xRxU9n13ymVsxRARL7ap17nYM8hA=="
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"captchaToken\": \"0cAFcWeA6XXyG6FnkmzdwrPzmdMi547S9esCgQPJ0k_9MXXPTgZg3wSv7qhuVYeQ39UazClZlIT4mKU37UPToo9iwyJ0PJh2eaLHHsk00EgFCOvtAK8FxwY9Vr-L1kKuxwrtkfaK0HC4mJ-SsiDGshObcjrEQ7UUAZ9SQ33s04M6gfSUpW-6yjEbmjbJ3keNcOKcq1IyDMxmoq2HtdLxP8brKcFPAG2hBvu5DM6Tn_eCkcWIsgXewLDHuuUH5_sMUfc8lCZL0-jeUu5Pe8OjXlLqJXKhXSMd5cgopgxF-8oxzF5v2KmwUa4cTr7iLJFEhrClIxp-95xYYMTchguJLHyfHkfaH5B-gPSNaLSfrEfT41PL5Rm4u7uaMmnVFuv5XTYP-H2U2J1SKEdPcZx1SK855d5aIENxJWSk7jaTxcMCx3d6wKXpoivdJml7XS5mJVDyj7-b8CPcyTaE6pTJPYikkWxIHfJh2rdyUDmQIiwcgE_aW4axRt0CMCT7s9c0tg2BLhijiwceauUk8KHdO6wzO_nX9xAEAX4EkwlIDeNWMbrwPhoEUd49CxkHsqnHzexLvv1fbJ0f9tQm5XenrK6_1lRR7LNwxrFZTL65hcMj5I83TU9I7USxnubYNlmeFNK2etsIS_ojanMl-JWu31-JZ-XhgfKNDuYxBmjZVM1FUpH_54ccIW2eflarJg-AtKMiJWpsjcbF3WiEpxbQqj1KYV1TRvc7FE5kgD1D2-DJ1S3Ic0kJLoepMMDYybFQ2g4Kl-RYBc9ilrZN_eWm4GxpFfq4sJuV8QmEGcTDNavLAQP3NcgbSFEx-t-594VD9zpv2OnYpMXI-Hl4St-flVTesqSj3WGWGfBGz5SkUYB_1ugDiXZz5yMp-37WuGhwZie1rQ7d7FcrcnkJbhNTpkPAQjbuDGcXs4AsY3XrnWiGzyTuZbVYhcKFe_g7H8bZIXC05nibCAscvUOqB28xEGXC1s3EP-4tWiwuwnxRpvHIj9AzTngflGMgaxtGR2YRv58jCmye7gVqVSmKowk-W5oczAgzpLgFuSjA\",\r\n    \"cartBeautiesStore\": true,\r\n    \"includeDeliveryThreshold\": true,\r\n    \"fiasId\": \"{{fiasId}}\",\r\n    \"cityDistrict\": null,\r\n    \"geoPolygons\": \"{{geo}}\",\r\n    \"regionId\": \"{{regionId}}\",\r\n    \"isPlaid\": true,\r\n    \"value\": \"ЛАЙМ\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://goldapple.ru/front/api/cart/coupon?locale=ru",
+              "protocol": "https",
+              "host": [
+                "goldapple",
+                "ru"
+              ],
+              "path": [
+                "front",
+                "api",
+                "cart",
+                "coupon"
+              ],
+              "query": [
+                {
+                  "key": "locale",
+                  "value": "ru"
+                }
+              ]
+            },
+            "description": "Generated from cURL: curl 'https://goldapple.ru/front/api/cart/coupon?locale=ru' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: ru,en;q=0.9' \\\r\n  -H 'cache-control: no-cache' \\\r\n  -H 'content-type: application/json' \\\r\n  -b '_ym_uid=1779522575660610355; _ym_d=1779522575; ga-device-id=Ky71MZXKQdbCYDsESWLAy; advcake_track_id=f02ef9b2-ab67-830b-5373-cd489a54798f; advcake_session_id=347e5672-840b-ad1d-8c06-8a6ede599378; mindboxDeviceUUID=56a46a2f-5443-4d46-b185-6090a418bfbf; directCrm-session=%7B%22deviceGuid%22%3A%2256a46a2f-5443-4d46-b185-6090a418bfbf%22%7D; _gcl_au=1.1.1665288543.1779522590; _ga=GA1.1.1910355215.1779522591; tmr_lvid=1ce75d6fd3a1287209e10ce966ab478b; tmr_lvidTS=1779522590819; adrcid=Ax74XyeyAvHk6jzm0cwyokw; ga_ecom_access_token=eyJhbGciOiJSUzI1NiIsImtpZCI6IkE4QTdDRDBFNjE0REQxNzE1OTU0ODZCNjA5MjNDMTBCRDYyMDZGMTRSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6InFLZk5EbUZOMFhGWlZJYTJDU1BCQzlZZ2J4USJ9.eyJuYmYiOjE3Nzk1MzkyNTAsImV4cCI6MTc5NTMwNzI1MCwiaXNzIjoiaHR0cHM6Ly9wbGFpZC5nb2xkYXBwbGUucnUiLCJhdWQiOiJJbnRlcm5hbEFQSSIsImNsaWVudF9pZCI6ImNsaWVudF93ZWIiLCJzdWIiOiI3OTE4NDgzODEwOCIsImF1dGhfdGltZSI6MTc3OTUzOTI1MCwiaWRwIjoicGhvbmVfcHVzaF90b2tlbiIsImN2ZCI6IjMxMjk3MTkiLCJjdnYiOiIxIiwibWFnZW50b19pZCI6IjAiLCJkaWQiOiJkYzY4NjlmNmU0YjI2MzMzIiwiZ2liIjoiYjM1MDFmYjNkOTZlNWZhYiIsImN1c3RvbWVyX2lkIjoiNDM5NWMwNTgtMTM5Yi00ZTQzLWFjMTgtYWZlZmMzZDIzZTdiIiwiY3VzdG9tZXJfcGhvbmUiOiI3OTE4NDgzODEwOCIsImN1c3RvbWVyX2lzX3JlZ2lzdGVyZWQiOiIxIiwiY3VzdG9tZXJfZ3JvdXBfaWQiOiI3IiwiY3BkIjoiMCIsImp0aSI6IjM0NkNDN0RGQUFGNTVCNDBCQTMyQzc4MDQ1QzQwNDdGIiwiaWF0IjoxNzc5NTM5MjUwLCJzY29wZSI6WyJvcGVuaWQiLCJwcm9maWxlIiwiV2ViQVBJIiwib2ZmbGluZV9hY2Nlc3MiXX0.ztOxe2nEG_F0BukCW9GVk_U4zwG0TEJ4t4ty7tl1Sa7059vsNbD4Orr4jIR-1yfANXk5DLjjVIDM-a2pE_vp1TnfE9QBq3p0dyLRabQjkINjEl6bueUeA8qw2I8AS41SejKJ4k651MaAYXY65k7SvmRfuiZ-AMs6RkJz71auVSVfW-cwm4CeA0RW5oxP3gNPflHENI7A-P2Q9JDztWgqUCCAaNf8Qy3ZVKnqlndss5HG_7RLLlMArVJ3YAz7Atu3m68ez6lGRF5UlTnWQpn_pkVkt0z9Pp-e6Xy7VPwZLqWEz4yIQMdhOx7JlM0r-hQcxxgKGtQkPHEc8hd4ZTUdI9RBMX4guQQjDmg72ab6IvJMPKEde1_vI1Clyu4yqV6RCt9YB0zMfsD-4O7QgLNQGwiEalVnZyW71gwk0URGA647uDhGNIy-jML6NtjLMki4X-a2mmraFiEM1UdY63vTWIFlj9epWdhGToMmOiRwFf2QjXZYS3XDZ1KDa9Q7AvOFMvi5_aFbdxSeiR6gef59-Ip9pfddGNtWxpiU5uFa2ioExPHIblybZ77eYJXcr6DA4Hhgkn80N16SREoawlM43-pl3NcmlVyeYYQ58WTQWxPDrBpOJE33Kh5zplRVxB7kzSSVj7a9oqmK9X1UM2IiADPjkd_N-HLdFEkp4CMDVLY; ga_ecom_has_access_token=true; ga_ecom_refresh_token=1434A75B369DC645865C8BE7D2E27499E80F5C0D97AE2E6393E950DF59399C18; ga_ecom_has_refresh_token=true; ga-ecom-user-id=4395c058-139b-4e43-ac18-afefc3d23e7b; ga-session-assets=1779540019.206.690923.387047|35ea8fadbee41dc5f5431a69d8c9f4c4; ga-lang=ru; client-store-code=default; mage-cache-sessid=true; domain_sid=J6Z5t-UCPzfji0r2x3VFq%3A1779625376940; ngx_s_id=NjQ5NzQyNjUtM2VhYi00OGM2LWFlMDEtZjAxOTMyMjA5ZTQzQDE3Nzk3MDk2NDc0MjdANDUwMDAwMEAxNzc5NTY0NDUxMjE3QDA0MjljYzBkNTdmNTg1ZDI1ZGRhNmE4NTRlZmZjNDMyMzkyMTgwNmFkYzMwMThhMzdhM2Q1YmE0OGViNGI4ZmI=; acs_3=%7B%22hash%22%3A%221aa3f9523ee6c2690cb34fc702d4143056487c0d%22%2C%22nst%22%3A1779796049644%2C%22sl%22%3A%7B%22224%22%3A1779709649644%2C%221228%22%3A1779709649644%7D%7D; _sp_ses.925f=*; ga-gun-init=true; _ym_isad=2; advcake_track_url=%3D20250113Qd87UUQhAVUjf%2F7SgeKufTUDICGMgsomDka%2BwQQBzlITF1dT9eEAUfT%2FqfrtTfFTD9kQ9JDiEGOm5U62Z4JFGAueXrrfNzRIMFsxYAvhfYm45xtKxdc8SOEotgyuA8wF2ovnZLOMROlnuFJrjY3WUNdNmcwTn2aO%2FCwbhJaZ0cQXiP7UQuPyJaFWa6WStkbUHVfKO49BqkSV3plJUB9mGrnckyGG9kOieXwr8xCw1cfh%2F4g9NlD9XsjCiRbiMCJks3NCwvhEGsnUbmhm18c0a2XNfbMnBOpN34%2FPdmBQwayOHUFRK5VngtQh4tCl%2FFsr3cw0mNOMd4j0Hd2ILFDNJst1fB8Q2tj9ZeS8uF2MrT4%2FD7cuSuG0XKFnhMD9DZsohNWJlRb%2FGPwrRcMo80kHOP5bGs4j8%2BCeP3fedaxyGgAQ9DceHJ9gsokgiq%2FY%2BRCsUM21qgkwCmRpGKVqJfQoiIy%2BMZvkOo8NM3jNY7FhMAsxIrqaccXJKjRSY3SfL2AG%2BjXvq4Ba9lLVAfhx5T1SnbqHUiYoKyH%2BCF0I34oNz3Ksi9wKTEMT9kUvo4hySJDpmWvp%2B1gBljIhseHUI8dyUz2VEL6jzOWgkJXTf5GJ76gR%2FP2v3rYHuL5BdWfnAvkEtLMVjidMkREoXFk1SvTZ0yJISmy2xvYVHti%2B%2FATIrKwP6Z%2FRpTM2SI8%3D; _spx=eyJpZCI6IjI5Y2Q5OWNkLTNjZTQtNDY5YS05MDQxLTY4Yzg0ODllOTUzNiIsImZpeGVkIjp7InN0YWNrIjpbMF19fQ%3D%3D; _ym_visorc=b; adrdel=1779711053741; __zzatw-goldapple=MDA0dC0cTHtmcDhhDHEWTT17CT4VHThHKHIzd2UtPm4iGkdeJ0BWUApXFhU0byZMOD5cRT4mMV5xICAbSVxUSg8/dRdZRkE2XBpLdWUvDDk6a2wkUlFDS2N8GgprLxoYfnQqUAgLYEJBcXwlLTFmJ3xLKTUdETJeV1U0O2dBVFg=AfNagQ==; tmr_detect=0%7C1779711065270; digi-analytics-sessionId=B3lXT8iiOYACrcpGjErxi; gsscw-goldapple=yQvPYpHFoA/hADkyWISkF93pmxA8FwFwQVXA25PYdzNkDUo6sGkToT8xIkHSEXtRBpQzg1d8olqZcT2NsY4kHLFGIULCV7dE9lRDduKxptglruGyI5MIlXi/wtorDlcU/ieo6MM7WPy0eCrMsTdxAUJBVN8SPi0UencQHyL/JhXCK3lBjXOw/o2X68Pp/D1eLbzAj2Bisx+x7PaT9svoGcsV0xQ8JcxJRQfGsTkpC8eU40O4MhlaTkPRlJtXdl+y8vqyog+2e57tZX3ntkXFxEXW77xRxU9n13ymVsxRARL7ap17nYM8hA==; cfidsw-goldapple=AhmqQnCi0U3A7gTkS37Hh+0Ux/6cenzec8qlpXlIYWwWA8B2w66w176xl7IdD+hA3LtT6W03OFY0AGncttrcHksVpdo9jzZFjQ0vgjjIgrTjIxXVrgN7/Py0YEVX4FoWyJONmTx6pomgPpjGLrVcCsNe4DjJVyLBpTZFT2A=; cfidsw-goldapple=AhmqQnCi0U3A7gTkS37Hh+0Ux/6cenzec8qlpXlIYWwWA8B2w66w176xl7IdD+hA3LtT6W03OFY0AGncttrcHksVpdo9jzZFjQ0vgjjIgrTjIxXVrgN7/Py0YEVX4FoWyJONmTx6pomgPpjGLrVcCsNe4DjJVyLBpTZFT2A=; gsscw-goldapple=yQvPYpHFoA/hADkyWISkF93pmxA8FwFwQVXA25PYdzNkDUo6sGkToT8xIkHSEXtRBpQzg1d8olqZcT2NsY4kHLFGIULCV7dE9lRDduKxptglruGyI5MIlXi/wtorDlcU/ieo6MM7WPy0eCrMsTdxAUJBVN8SPi0UencQHyL/JhXCK3lBjXOw/o2X68Pp/D1eLbzAj2Bisx+x7PaT9svoGcsV0xQ8JcxJRQfGsTkpC8eU40O4MhlaTkPRlJtXdl+y8vqyog+2e57tZX3ntkXFxEXW77xRxU9n13ymVsxRARL7ap17nYM8hA==; _ga_QE5MQ8XJJK=GS2.1.s1779709654$o8$g1$t1779712230$j8$l0$h0; _sp_id.925f=c620e419-41b8-41da-8449-acbefb8b4495.1779522588.7.1779712231.1779628236.5a4cd4fb-157b-4a50-8024-6589cf36a356.1ebffec4-4a4e-427b-8177-54f0f9904cc7.9e1e77e6-b204-4b58-a664-b77e185e85e6.1779709654733.123; fgsscw-goldapple=ZpkG894d4c7989228824fba178ec1deaddf41919' \\\r\n  -H 'origin: https://goldapple.ru' \\\r\n  -H 'plaid-city-id: 7dfa745e-aa19-4688-b121-b655c11e482f' \\\r\n  -H 'plaid-device-id: Ky71MZXKQdbCYDsESWLAy' \\\r\n  -H 'plaid-geo-polygons: EKB-000000389,EKB-000000387,EKB-000001386,EKB-000001440,EKB-000001484,EKB-000001564,EKB-000001678,EKB-000000388' \\\r\n  -H 'plaid-language-id: ru_RU' \\\r\n  -H 'plaid-platform: web' \\\r\n  -H 'plaid-region-id: d00e1013-16bd-4c09-b3d5-3cb09fc54bd8' \\\r\n  -H 'plaid-store-id: ru' \\\r\n  -H 'plaid-version: 1.0.0' \\\r\n  -H 'pragma: no-cache' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://goldapple.ru/89190600001-cicalfate' \\\r\n  -H 'sec-ch-ua: \"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"YaBrowser\";v=\"26.4\", \"Yowser\";v=\"2.5\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'traceparent: 00-8861f5e5c5ce5e98969f3309f6d5b1e5-694e3b77824fab5f-00' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 YaBrowser/26.4.0.0 Safari/537.36' \\\r\n  -H 'x-gib-fgsscw-goldapple: ZpkG894d4c7989228824fba178ec1deaddf41919' \\\r\n  -H 'x-gib-gsscw-goldapple: yQvPYpHFoA/hADkyWISkF93pmxA8FwFwQVXA25PYdzNkDUo6sGkToT8xIkHSEXtRBpQzg1d8olqZcT2NsY4kHLFGIULCV7dE9lRDduKxptglruGyI5MIlXi/wtorDlcU/ieo6MM7WPy0eCrMsTdxAUJBVN8SPi0UencQHyL/JhXCK3lBjXOw/o2X68Pp/D1eLbzAj2Bisx+x7PaT9svoGcsV0xQ8JcxJRQfGsTkpC8eU40O4MhlaTkPRlJtXdl+y8vqyog+2e57tZX3ntkXFxEXW77xRxU9n13ymVsxRARL7ap17nYM8hA==' \\\r\n  --data-raw '{\"captchaToken\":\"0cAFcWeA6XXyG6FnkmzdwrPzmdMi547S9esCgQPJ0k_9MXXPTgZg3wSv7qhuVYeQ39UazClZlIT4mKU37UPToo9iwyJ0PJh2eaLHHsk00EgFCOvtAK8FxwY9Vr-L1kKuxwrtkfaK0HC4mJ-SsiDGshObcjrEQ7UUAZ9SQ33s04M6gfSUpW-6yjEbmjbJ3keNcOKcq1IyDMxmoq2HtdLxP8brKcFPAG2hBvu5DM6Tn_eCkcWIsgXewLDHuuUH5_sMUfc8lCZL0-jeUu5Pe8OjXlLqJXKhXSMd5cgopgxF-8oxzF5v2KmwUa4cTr7iLJFEhrClIxp-95xYYMTchguJLHyfHkfaH5B-gPSNaLSfrEfT41PL5Rm4u7uaMmnVFuv5XTYP-H2U2J1SKEdPcZx1SK855d5aIENxJWSk7jaTxcMCx3d6wKXpoivdJml7XS5mJVDyj7-b8CPcyTaE6pTJPYikkWxIHfJh2rdyUDmQIiwcgE_aW4axRt0CMCT7s9c0tg2BLhijiwceauUk8KHdO6wzO_nX9xAEAX4EkwlIDeNWMbrwPhoEUd49CxkHsqnHzexLvv1fbJ0f9tQm5XenrK6_1lRR7LNwxrFZTL65hcMj5I83TU9I7USxnubYNlmeFNK2etsIS_ojanMl-JWu31-JZ-XhgfKNDuYxBmjZVM1FUpH_54ccIW2eflarJg-AtKMiJWpsjcbF3WiEpxbQqj1KYV1TRvc7FE5kgD1D2-DJ1S3Ic0kJLoepMMDYybFQ2g4Kl-RYBc9ilrZN_eWm4GxpFfq4sJuV8QmEGcTDNavLAQP3NcgbSFEx-t-594VD9zpv2OnYpMXI-Hl4St-flVTesqSj3WGWGfBGz5SkUYB_1ugDiXZz5yMp-37WuGhwZie1rQ7d7FcrcnkJbhNTpkPAQjbuDGcXs4AsY3XrnWiGzyTuZbVYhcKFe_g7H8bZIXC05nibCAscvUOqB28xEGXC1s3EP-4tWiwuwnxRpvHIj9AzTngflGMgaxtGR2YRv58jCmye7gVqVSmKowk-W5oczAgzpLgFuSjA\",\"cartBeautiesStore\":true,\"includeDeliveryThreshold\":true,\"fiasId\":\"7dfa745e-aa19-4688-b121-b655c11e482f\",\"cityDistrict\":null,\"geoPolygons\":[\"EKB-000000389\",\"EKB-000000387\",\"EKB-000001386\",\"EKB-000001440\",\"EKB-000001484\",\"EKB-000001564\",\"EKB-000001678\",\"EKB-000000388\"],\"regionId\":\"d00e1013-16bd-4c09-b3d5-3cb09fc54bd8\",\"isPlaid\":true,\"value\":\"ЛАЙМ\"}'"
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
