@@ -180,24 +180,24 @@
             "method": "POST",
             "header": [],
             "body": {
-              "mode": "formdata",
-              "formdata": [
+              "mode": "urlencoded",
+              "urlencoded": [
                 {
                   "key": "name",
                   "value": "Maya",
                   "type": "text",
-                  "uuid": "1a270cb2-7e75-4610-a74f-defe8535178e"
+                  "uuid": "31f3785e-f9e3-4dd0-8f7d-c85ed4952275"
                 },
                 {
                   "key": "status",
                   "value": "pending",
                   "type": "text",
-                  "uuid": "55cd069d-e632-41e7-99d4-238bcc702c23"
+                  "uuid": "dfa15adf-1687-4848-8b09-47d973dc7aa0"
                 }
               ]
             },
             "url": {
-              "raw": "https://petstore.swagger.io/v2/pet/50846",
+              "raw": "https://petstore.swagger.io/v2/pet/{{petId}}",
               "protocol": "https",
               "host": [
                 "petstore",
@@ -207,7 +207,7 @@
               "path": [
                 "v2",
                 "pet",
-                "50846"
+                "{{petId}}"
               ]
             }
           },
